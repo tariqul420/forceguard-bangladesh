@@ -7,6 +7,7 @@ import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'leaflet.markercluster';
 import Link from 'next/link';
+import useData from '@/hook/useData';
 
 interface Camp {
   name: string;
@@ -37,6 +38,8 @@ const MapComponent = () => {
   const [nearbyCamps, setNearbyCamps] = useState<Camp[]>([]);
   const [locationError, setLocationError] = useState<string | null>(null);
   const mapRef = useRef<L.Map | null>(null);
+  const { mapLocation } = useData();
+  console.log(mapLocation)
 
   useEffect(() => {
     fetch('/camps.json')
@@ -51,7 +54,7 @@ const MapComponent = () => {
     if (camps.length === 0) return;
 
     // Initialize the map
-    const map = L.map('map').setView([23.8103, 90.4125], 7);
+    const map = L.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], 7);
     mapRef.current = map;
 
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -119,7 +122,7 @@ const MapComponent = () => {
         mapRef.current.remove();
       }
     };
-  }, [camps]);
+  }, [camps, mapLocation?.latitude, mapLocation?.longitude]);
 
   // Function to update stats
   const updateStats = (camps: Camp[]) => {
