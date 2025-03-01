@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto p-5">
         <HeaderSection />
-        <main className="h-[calc(100vh-305px)]">{children}</main>
+        <main className="min-h-[calc(100vh-305px)]">{children}</main>
         <FooterSection />
       </body>
     </html>
