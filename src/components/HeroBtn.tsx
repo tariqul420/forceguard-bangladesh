@@ -1,13 +1,29 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import axios from 'axios';
+
+interface Camp {
+  name: string;
+  suburbs?: { name: string }[];
+}
 
 const HeroBtn = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState<string>('');
+  const [suggestions, setSuggestions] = useState<Camp[]>([]);
   const [location, setLocation] = useState<{ latitude: number; longitude: number } | null>(null);
+  const [camps, setCamps] = useState<Camp[]>([]);
+
+  console.log(location)
+
+  useEffect(() => {
+    axios.get('/camps.json')
+      .then(({ data }) => setCamps(data))
+      .catch(err => console.error('Error fetching camps:', err));
+  }, []);
 
   const handleSearch = () => {
     if (searchValue.trim() === '') {
@@ -19,6 +35,7 @@ const HeroBtn = () => {
 
   const handleReset = () => {
     setSearchValue('');
+    setSuggestions([]);
   };
 
   const handleLocation = () => {
@@ -26,75 +43,70 @@ const HeroBtn = () => {
       router.push('/');
     } else {
       if (navigator.geolocation) {
-        const options = {
-          enableHighAccuracy: true, // Use GPS if available
-          timeout: 10000, // Wait up to 10 seconds
-          maximumAge: 0, // Do not use a cached position
-        };
-
         navigator.geolocation.getCurrentPosition(
           (position) => {
             const { latitude, longitude } = position.coords;
             setLocation({ latitude, longitude });
             alert(`আপনার লোকেশন: Latitude: ${latitude}, Longitude: ${longitude}`);
           },
-          (error) => {
-            switch (error.code) {
-              case error.PERMISSION_DENIED:
-                alert('লোকেশন এক্সেস দেওয়া হয়নি। অনুগ্রহ করে ব্রাউজার সেটিংস থেকে লোকেশন এক্সেস অন করুন।');
-                break;
-              case error.POSITION_UNAVAILABLE:
-                alert('লোকেশন তথ্য পাওয়া যায়নি।');
-                break;
-              case error.TIMEOUT:
-                alert('লোকেশন অনুরোধের সময় শেষ হয়েছে। আবার চেষ্টা করুন।');
-                break;
-              default:
-                alert('একটি অজানা সমস্যা হয়েছে।');
-            }
-            alert(error);
-          },
-          options
+          () => {
+            alert('লোকেশন তথ্য পাওয়া যায়নি। অনুগ্রহ করে ব্রাউজার সেটিংস চেক করুন।');
+          }
         );
       } else {
-        alert('আপনার ব্রাউজার লোকেশন সাপোর্ট করে না।');
         alert('আপনার ব্রাউজার লোকেশন সাপোর্ট করে না।');
       }
     }
   };
 
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const term = e.target.value.toLowerCase();
+    setSearchValue(term);
+
+    if (term.length > 0) {
+      const matchedCamps = camps.filter((camp) => camp.name.toLowerCase().includes(term));
+      const matchedSuburbs = camps.flatMap((camp) => camp.suburbs ? camp.suburbs.filter((suburb) => suburb.name.toLowerCase().includes(term)) : []);
+      setSuggestions([...matchedCamps, ...matchedSuburbs]);
+    } else {
+      setSuggestions([]);
+    }
+  };
+
   return (
-    <div className="flex items-center gap-2">
-      {/* সার্চ ইনপুট */}
+    <div className="relative flex items-center gap-2">
       <input
         className="flex-1 py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
         type="text"
         placeholder="ক্যাম্প খুঁজুন..."
         value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
+        onChange={handleInputChange}
+        onBlur={() => setTimeout(() => setSuggestions([]), 200)}
       />
 
-      {/* সার্চ বাটন */}
-      <button
-        onClick={handleSearch}
-        className="px-5 py-2 bg-green-700 text-white rounded-md cursor-pointer font-['Hind Siliguri'] text-[16px] transition-all duration-300 hover:bg-green-800"
-      >
+      {suggestions.length > 0 && (
+        <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-md max-h-40 overflow-y-auto shadow-lg z-[10000]">
+          {suggestions.map((match, index) => (
+            <div
+              key={index}
+              className="p-2 cursor-pointer hover:bg-gray-100"
+              onClick={() => {
+                setSearchValue(match.name);
+                setSuggestions([]);
+              }}
+            >
+              {match.name}
+            </div>
+          ))}
+        </div>
+      )}
+
+      <button onClick={handleSearch} className="px-5 py-2 bg-green-700 text-white rounded-md hover:bg-green-800">
         খুঁজুন
       </button>
-
-      {/* রিসেট বাটন */}
-      <button
-        onClick={handleReset}
-        className="px-5 py-2 bg-red-500 text-white rounded-md cursor-pointer font-['Hind Siliguri'] text-[16px] transition-all duration-300 hover:bg-red-600"
-      >
+      <button onClick={handleReset} className="px-5 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
         রিসেট
       </button>
-
-      {/* লোকেশন বাটন */}
-      <button
-        onClick={handleLocation}
-        className="px-5 py-2 bg-blue-500 text-white rounded-md cursor-pointer font-['Hind Siliguri'] text-[16px] transition-all duration-300 hover:bg-blue-700"
-      >
+      <button onClick={handleLocation} className="px-5 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">
         {pathname === '/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
       </button>
     </div>

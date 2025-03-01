@@ -11,12 +11,8 @@ const HeaderSection = () => {
 
       {/* button container */}
       <div className="relative flex flex-col gap-4 mb-5">
+        {/* btn and suggestion */}
         <HeroBtn />
-
-        {/* suggestions camp name */}
-        <div className="absolute bg-white border border-gray-300 top-full rounded-md max-h-[200px] overflow-y-auto w-[calc(100%-40px)] z-[9999999] shadow-lg hidden">
-          {/* Suggestions content here */}
-        </div>
       </div>
     </header>
   );
