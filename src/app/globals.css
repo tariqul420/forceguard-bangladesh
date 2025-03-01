@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+    --color-green: #006A4E;
+}
+
+body {
+    font-family: var(--font-hind-siliguri), sans-serif;
+}
