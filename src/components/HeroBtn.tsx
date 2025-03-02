@@ -51,7 +51,11 @@ const HeroBtn = () => {
       const { latitude, longitude } = matchedCamps[0].location;
 
       if (!isNaN(parseFloat(latitude)) && !isNaN(parseFloat(longitude))) {
-        setMapLocation({ latitude: parseFloat(latitude), longitude: parseFloat(longitude), zoom: maxZoom });
+        if (pathname === '/all-camp') {
+          // search form all camp
+        } else {
+          setMapLocation({ latitude: parseFloat(latitude), longitude: parseFloat(longitude), zoom: maxZoom });
+        }
       } else {
         toast.error('❌ ক্যাম্পের লোকেশন পাওয়া যায়নি!');
       }
