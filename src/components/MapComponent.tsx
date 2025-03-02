@@ -52,14 +52,40 @@ const MapComponent = () => {
   useEffect(() => {
     if (camps.length === 0) return;
 
-    // Initialize the map
     const map = L.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
     mapRef.current = map;
 
-    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors',
-    });
-    osm.addTo(map);
+    // Define multiple map layers
+    const layers = {
+      OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
+      }),
+      'Google Satellite': L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google',
+      }),
+      'Google Streets': L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google',
+      }),
+      'Google Terrain': L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google',
+      }),
+      'Google Hybrid': L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google',
+      }),
+      'Esri World Imagery': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: '&copy; Esri',
+      }),
+    };
+
+    // Add default layer
+    layers['OpenStreetMap'].addTo(map);
+
+    // Layer control to switch between views
+    L.control.layers(layers).addTo(map);
 
     // Define custom icon
     const customIcon = L.icon({
@@ -89,20 +115,10 @@ const MapComponent = () => {
             ${camp?.description ? `<p class="text-sm text-gray-600 mt-2">${camp?.description}</p>` : ''}
             ${
               camp?.phoneNumbers && camp?.phoneNumbers?.length > 0
-                ? `
-                  <div class="contact mt-3">
+                ? `<div class="contact mt-3">
                     <span class="font-semibold text-gray-800">Contact:</span>
-                    ${camp.phoneNumbers
-                      .map(
-                        (phone) => `
-                          <a href="tel:${phone}" class="block text-blue-500 hover:text-blue-700 mt-1">
-                            ${phone}
-                          </a>
-                        `,
-                      )
-                      .join('')}
-                  </div>
-                `
+                    ${camp.phoneNumbers.map((phone) => `<a href="tel:${phone}" class="block text-blue-500 hover:text-blue-700 mt-1">${phone}</a>`).join('')}
+                  </div>`
                 : ''
             }
           </div>
@@ -115,7 +131,6 @@ const MapComponent = () => {
 
     map.addLayer(markers);
 
-    // Cleanup
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
