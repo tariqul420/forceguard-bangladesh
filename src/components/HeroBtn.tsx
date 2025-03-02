@@ -1,10 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FormEvent } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import axios from 'axios';
 import useData from '@/hook/useData';
 import toast from 'react-hot-toast';
+import { FaSearch, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 
 interface Camp {
   name: string;
@@ -25,8 +26,6 @@ const HeroBtn = () => {
       .get('/camps.json')
       .then(({ data }) => {
         setCamps(data);
-
-        // ✅ Set first camp's location as the default map location
         if (data.length > 0) {
           const defaultCamp = data[0];
           setMapLocation({
@@ -38,19 +37,24 @@ const HeroBtn = () => {
       .catch((err) => console.error('Error fetching camps:', err));
   }, [setMapLocation]);
 
-  const handleSearch = () => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (searchValue.trim() === '') {
-      alert('অনুগ্রহ করে একটি ক্যাম্পের নাম লিখুন!');
-    } else {
-      alert(`আপনি খুঁজছেন: ${searchValue}`);
+      toast.error('অনুগ্রহ করে একটি ক্যাম্পের নাম লিখুন!');
+      return;
     }
 
-    // ✅ Set first camp as location if available
-    if (camps.length > 0) {
-      setMapLocation({
-        latitude: parseFloat(camps[0].location.latitude),
-        longitude: parseFloat(camps[0].location.longitude),
-      });
+    const matchedCamps = camps.filter((camp) => camp.name.toLowerCase().includes(searchValue.toLowerCase()));
+    if (matchedCamps.length > 0) {
+      const { latitude, longitude } = matchedCamps[0].location;
+
+      if (!isNaN(parseFloat(latitude)) && !isNaN(parseFloat(longitude))) {
+        setMapLocation({ latitude: parseFloat(latitude), longitude: parseFloat(longitude) });
+      } else {
+        toast.error('❌ ক্যাম্পের লোকেশন পাওয়া যায়নি!');
+      }
+    } else {
+      toast.error('আপনার অনুসন্ধানে কোনো ক্যাম্প মেলেনি!');
     }
   };
 
@@ -60,85 +64,84 @@ const HeroBtn = () => {
     setMapLocation({ latitude: 23.8103, longitude: 90.4125 });
   };
 
-  const handleLocation = () => {
-    if (pathname === '/all-camp') {
-      router.push('/');
-    } else {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            const { latitude, longitude } = position.coords;
-            setMapLocation({ latitude, longitude });
-          },
-          (error) => {
-            console.error('Geolocation Error:', error);
-            toast.error('❌ আপনার সঠিক লোকেশন পাওয়া যায়নি। অনুগ্রহ করে ব্রাউজার সেটিংস চেক করুন।');
-          },
-          { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 },
-        );
-      } else {
-        toast.error('❌ আপনার ব্রাউজার লোকেশন সাপোর্ট করে না।');
-
-        // ✅ Fallback to first camp location if available
-        if (camps.length > 0) {
-          setMapLocation({
-            latitude: parseFloat(camps[0].location.latitude),
-            longitude: parseFloat(camps[0].location.longitude),
-          });
-          toast.success(`🔄 ক্যাম্পের ডিফল্ট লোকেশন সেট করা হয়েছে: ${camps[0].name}`);
-        }
-      }
-    }
-  };
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value.toLowerCase();
     setSearchValue(term);
+    setSuggestions(term.length > 0 ? camps.filter((camp) => camp.name.toLowerCase().includes(term)) : []);
+  };
 
-    if (term.length > 0) {
-      const matchedCamps = camps.filter((camp) => camp.name.toLowerCase().includes(term));
-      console.log(matchedCamps)
-      setSuggestions(matchedCamps);
+  const handleLocation = () => {
+    if (pathname === '/all-camp') {
+      router.push('/');
+    } else if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setMapLocation({ latitude: position.coords.latitude, longitude: position.coords.longitude });
+          toast.success('✅ আপনার লোকেশন সেট করা হয়েছে!');
+        },
+        () => {
+          toast.error('❌ আপনার সঠিক লোকেশন পাওয়া যায়নি। অনুগ্রহ করে ব্রাউজার সেটিংস চেক করুন।');
+          if (camps.length > 0) {
+            setMapLocation({
+              latitude: parseFloat(camps[0].location.latitude),
+              longitude: parseFloat(camps[0].location.longitude),
+            });
+            toast.success(`🔄 ক্যাম্পের ডিফল্ট লোকেশন সেট করা হয়েছে: ${camps[0].name}`);
+          }
+        }
+      );
     } else {
-      setSuggestions([]);
+      toast.error('❌ আপনার ব্রাউজার লোকেশন সাপোর্ট করে না।');
     }
   };
 
   return (
-    <div className="relative flex items-center gap-2">
-      <input
-        className="flex-1 py-3 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-        type="text"
-        placeholder="ক্যাম্প খুঁজুন..."
-        value={searchValue}
-        onChange={handleInputChange}
-        onBlur={() => setTimeout(() => setSuggestions([]), 200)}
-      />
+    <div className="w-full flex flex-col gap-4">
+      <form onSubmit={handleSubmit} className="relative flex flex-col md:flex-row w-full gap-3">
+        <div className="relative w-full">
+          <input
+            className="w-full py-3 px-4 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+            type="text"
+            placeholder="ক্যাম্প খুঁজুন..."
+            value={searchValue}
+            onChange={handleInputChange}
+            onBlur={() => setTimeout(() => setSuggestions([]), 200)}
+          />
+          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
 
-      {suggestions.length > 0 && (
-        <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-md max-h-40 overflow-y-auto shadow-lg z-[10000]">
-          {suggestions.map((match, index) => (
-            <div
-              key={index}
-              className="p-2 cursor-pointer hover:bg-gray-100"
-              onClick={() => {
-                setSearchValue(match.name);
-                setSuggestions([]);
-              }}
-            >
-              {match.name}
+          {suggestions.length > 0 && (
+            <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg max-h-40 overflow-y-auto shadow-lg z-10">
+              {suggestions.map((match, index) => (
+                <div
+                  key={index}
+                  className="p-3 cursor-pointer hover:bg-gray-100"
+                  onClick={() => {
+                    setSearchValue(match.name);
+                    setSuggestions([]);
+                  }}
+                >
+                  {match.name}
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
-      )}
 
-      <button onClick={handleSearch} className="px-5 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 cursor-pointer">
-        খুঁজুন
-      </button>
-      <button onClick={handleReset} className="px-5 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 cursor-pointer">
-        রিসেট
-      </button>
-      <button onClick={handleLocation} className="px-5 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 cursor-pointer">
+        <div className="flex gap-3 w-full md:w-auto">
+          <button type="submit" className="w-full md:w-auto px-5 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 flex items-center justify-center gap-2">
+            <FaSearch /> খুঁজুন
+          </button>
+          <button type="button" onClick={handleReset} className="w-full md:w-auto px-5 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 flex items-center justify-center gap-2">
+            <FaTimes /> রিসেট
+          </button>
+        </div>
+      </form>
+
+      <button
+        onClick={handleLocation}
+        className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2"
+      >
+        <FaMapMarkerAlt />
         {pathname === '/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
       </button>
     </div>
