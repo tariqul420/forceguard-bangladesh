@@ -130,16 +130,16 @@ const HeroBtn = () => {
         </div>
 
         <div className="flex gap-3 w-full md:w-auto">
-          <button type="submit" className="w-full md:w-auto px-5 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 flex items-center justify-center gap-2">
+          <button type="submit" className="w-full md:w-auto px-5 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 flex items-center justify-center gap-2 cursor-pointer">
             <FaSearch /> খুঁজুন
           </button>
-          <button type="button" onClick={handleReset} className="w-full md:w-auto px-5 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 flex items-center justify-center gap-2">
+          <button type="button" onClick={handleReset} className="w-full md:w-auto px-5 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 flex items-center justify-center gap-2 cursor-pointer">
             <FaTimes /> রিসেট
           </button>
         </div>
       </form>
 
-      <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2">
+      <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
         <FaMapMarkerAlt />
         {pathname === '/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
       </button>

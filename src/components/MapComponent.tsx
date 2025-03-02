@@ -131,6 +131,29 @@ const MapComponent = () => {
 
     map.addLayer(markers);
 
+    // User Location Icon
+    const userLocationIcon = L.icon({
+      iconUrl: '/location_icon.png',
+      iconSize: [50, 50],
+      iconAnchor: [12, 25],
+      popupAnchor: [0, -25],
+    });
+
+    // Get User Location
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          L.marker([latitude, longitude], { icon: userLocationIcon }).bindPopup('You are here!').addTo(map);
+
+          map.setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
+        },
+        (error) => {
+          console.error('Error getting location:', error);
+        },
+      );
+    }
+
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
