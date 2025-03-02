@@ -280,7 +280,7 @@ const MapComponent = () => {
         </div>
 
         {/* Data page button */}
-        <div className="mt-6">
+        <div className="mt-6 flex justify-center">
           <Link href={'/all-camp'} className="data-page-btn inline-block px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all duration-300">
             সকল ডাটা দেখুন এক পেইজে
           </Link>
