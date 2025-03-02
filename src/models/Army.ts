@@ -1,33 +1,17 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
-interface IArmy extends Document {
-    name: string;
-    location: {
-        latitude: number;
-        longitude: number;
-    };
-    description: string;
-    phoneNumbers: number[];
-    suburbs?: {
-        name: string;
-        latitude: number;
-        longitude: number;
-    }[];
-    division: string;
-}
-
-const ArmySchema = new Schema<IArmy>({
+const ArmySchema = new Schema({
     name: {
         type: String,
         required: true,
     },
     location: {
         latitude: {
-            type: Number,
+            type: String,
             required: true,
         },
         longitude: {
-            type: Number,
+            type: String,
             required: true,
         },
     },
@@ -36,7 +20,7 @@ const ArmySchema = new Schema<IArmy>({
         required: true,
     },
     phoneNumbers: {
-        type: [Number],
+        type: [String],
         required: true,
     },
     suburbs: {
@@ -47,11 +31,11 @@ const ArmySchema = new Schema<IArmy>({
                     required: true,
                 },
                 latitude: {
-                    type: Number,
+                    type: String,
                     required: true,
                 },
                 longitude: {
-                    type: Number,
+                    type: String,
                     required: true,
                 },
             },
@@ -64,6 +48,6 @@ const ArmySchema = new Schema<IArmy>({
     },
 });
 
-const Army = mongoose.model<IArmy>('Army', ArmySchema);
+const Army = mongoose.models.Army || mongoose.model('Army', ArmySchema, "armies");
 
 export default Army;

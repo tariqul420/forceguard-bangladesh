@@ -1,21 +1,14 @@
-import fs from 'fs/promises';
-import path from 'path';
+import dbConnect from '@/lib/dbConnect';
+import Army from '@/models/Army';
 
-type Camp = {
-  name: string;
-  location: {
-    latitude: string;
-    longitude: string;
-  };
-  description: string;
-  phoneNumbers: string[];
-  division: string;
-};
+export async function fetchArmyCamps() {
+  await dbConnect();
+  const services = await Army.find();
+  return services;
+}
 
 const Page = async () => {
-  const filePath = path.join(process.cwd(), 'public/camps.json');
-  const fileContents = await fs.readFile(filePath, 'utf-8');
-  const camps: Camp[] = JSON.parse(fileContents);
+  const camps = (await fetchArmyCamps()) || [];
 
   return (
     <div className="my-12">
