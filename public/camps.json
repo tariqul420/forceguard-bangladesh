@@ -636,7 +636,8 @@
                 "longitude": "90.4591939"
             }
         ],
-        "division": "ঢাকা (Dhaka)"
+        "division": "ঢাকা (Dhaka)",
+        "zilla": "bangla (english)"
     },
     {
         "name": "শেরপুর (Sherpur)",

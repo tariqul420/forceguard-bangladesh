@@ -1,10 +1,10 @@
+import FooterSection from '@/components/FooterSection';
+import Title from '@/components/Title';
+import DataProvider from '@/provider/DataProvider';
 import type { Metadata } from 'next';
 import { Hind_Siliguri } from 'next/font/google';
-import './globals.css';
-import HeaderSection from '@/components/HeaderSection';
-import FooterSection from '@/components/FooterSection';
-import DataProvider from '@/provider/DataProvider';
 import { Toaster } from 'react-hot-toast';
+import './globals.css';
 
 const hindSiliguri = Hind_Siliguri({
   subsets: ['latin'],
@@ -39,13 +39,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={hindSiliguri.variable}>
+    <html lang="bn" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto p-5">
         <DataProvider>
-          <HeaderSection />
-          <main className="min-h-[calc(100vh-305px)]">{children}</main>
+          <Title title="বাংলাদেশে সেনাবাহিনীর ক্যাম্প ও থানার লোকেশন" desc="সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর" />
+          {children}
           <FooterSection />
-          <Toaster position='top-right' reverseOrder={false} />
+          <Toaster position="top-right" reverseOrder={false} />
         </DataProvider>
       </body>
     </html>
