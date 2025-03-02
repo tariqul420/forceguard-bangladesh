@@ -1,4 +1,3 @@
-import MapComponent from '@/components/MapComponent';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -44,7 +43,6 @@ const Page = async () => {
           </tbody>
         </table>
       </div>
-      <MapComponent/>
     </div>
   );
 };

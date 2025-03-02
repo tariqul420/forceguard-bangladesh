@@ -1,4 +1,4 @@
-import HeaderSection from '@/components/HeaderSection';
+import HeaderSection from "@/components/army/HeaderSection";
 
 export default function RootLayout({
   children,

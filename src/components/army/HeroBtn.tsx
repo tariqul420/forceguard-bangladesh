@@ -77,8 +77,8 @@ const HeroBtn = () => {
   };
 
   const handleLocation = () => {
-    if (pathname === '/all-camp') {
-      router.push('/');
+    if (pathname === '/army/all-camp') {
+      router.push('/army');
     } else if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -116,7 +116,7 @@ const HeroBtn = () => {
           <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
 
           {suggestions.length > 0 && (
-            <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg max-h-40 overflow-y-auto shadow-lg z-10">
+            <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-lg max-h-40 overflow-y-auto shadow-lg z-[5000]">
               {suggestions.map((match, index) => (
                 <div
                   key={index}
@@ -145,7 +145,7 @@ const HeroBtn = () => {
 
       <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
         <FaMapMarkerAlt />
-        {pathname === '/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
+        {pathname === '/army/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
       </button>
     </div>
   );

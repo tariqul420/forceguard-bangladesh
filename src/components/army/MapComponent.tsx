@@ -57,6 +57,10 @@ const MapComponent = () => {
 
     // Define multiple map layers
     const layers = {
+      'Google Terrain': L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+        attribution: '&copy; Google',
+      }),
       OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
       }),
@@ -65,10 +69,6 @@ const MapComponent = () => {
         attribution: '&copy; Google',
       }),
       'Google Streets': L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
-        attribution: '&copy; Google',
-      }),
-      'Google Terrain': L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google',
       }),
@@ -281,7 +281,7 @@ const MapComponent = () => {
 
         {/* Data page button */}
         <div className="mt-6 flex justify-center">
-          <Link href={'/all-camp'} className="data-page-btn inline-block px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all duration-300">
+          <Link href={'/army/all-camp'} className="data-page-btn inline-block px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all duration-300">
             সকল ডাটা দেখুন এক পেইজে
           </Link>
         </div>

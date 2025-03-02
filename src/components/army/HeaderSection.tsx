@@ -1,5 +1,6 @@
+
+import Title from '../Title';
 import HeroBtn from './HeroBtn';
-import Title from './Title';
 
 const HeaderSection = () => {
   return (
