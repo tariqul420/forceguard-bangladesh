@@ -20,6 +20,7 @@ const HeroBtn = () => {
   const [suggestions, setSuggestions] = useState<Camp[]>([]);
   const [camps, setCamps] = useState<Camp[]>([]);
   const { setMapLocation } = useData();
+  const maxZoom = 15;
 
   useEffect(() => {
     axios
@@ -31,6 +32,7 @@ const HeroBtn = () => {
           setMapLocation({
             latitude: parseFloat(defaultCamp.location.latitude),
             longitude: parseFloat(defaultCamp.location.longitude),
+            zoom: 7,
           });
         }
       })
@@ -49,7 +51,7 @@ const HeroBtn = () => {
       const { latitude, longitude } = matchedCamps[0].location;
 
       if (!isNaN(parseFloat(latitude)) && !isNaN(parseFloat(longitude))) {
-        setMapLocation({ latitude: parseFloat(latitude), longitude: parseFloat(longitude) });
+        setMapLocation({ latitude: parseFloat(latitude), longitude: parseFloat(longitude), zoom: maxZoom });
       } else {
         toast.error('❌ ক্যাম্পের লোকেশন পাওয়া যায়নি!');
       }
@@ -61,7 +63,7 @@ const HeroBtn = () => {
   const handleReset = () => {
     setSearchValue('');
     setSuggestions([]);
-    setMapLocation({ latitude: 23.8103, longitude: 90.4125 });
+    setMapLocation({ latitude: 23.8103, longitude: 90.4125, zoom: 7 });
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -76,8 +78,7 @@ const HeroBtn = () => {
     } else if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          setMapLocation({ latitude: position.coords.latitude, longitude: position.coords.longitude });
-          toast.success('✅ আপনার লোকেশন সেট করা হয়েছে!');
+          setMapLocation({ latitude: position.coords.latitude, longitude: position.coords.longitude, zoom: maxZoom });
         },
         () => {
           toast.error('❌ আপনার সঠিক লোকেশন পাওয়া যায়নি। অনুগ্রহ করে ব্রাউজার সেটিংস চেক করুন।');
@@ -85,10 +86,11 @@ const HeroBtn = () => {
             setMapLocation({
               latitude: parseFloat(camps[0].location.latitude),
               longitude: parseFloat(camps[0].location.longitude),
+              zoom: maxZoom,
             });
             toast.success(`🔄 ক্যাম্পের ডিফল্ট লোকেশন সেট করা হয়েছে: ${camps[0].name}`);
           }
-        }
+        },
       );
     } else {
       toast.error('❌ আপনার ব্রাউজার লোকেশন সাপোর্ট করে না।');
@@ -137,10 +139,7 @@ const HeroBtn = () => {
         </div>
       </form>
 
-      <button
-        onClick={handleLocation}
-        className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2"
-      >
+      <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2">
         <FaMapMarkerAlt />
         {pathname === '/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
       </button>

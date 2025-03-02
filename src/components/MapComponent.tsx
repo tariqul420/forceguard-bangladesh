@@ -39,7 +39,6 @@ const MapComponent = () => {
   const [locationError, setLocationError] = useState<string | null>(null);
   const mapRef = useRef<L.Map | null>(null);
   const { mapLocation } = useData();
-  console.log(mapLocation)
 
   useEffect(() => {
     fetch('/camps.json')
@@ -54,7 +53,7 @@ const MapComponent = () => {
     if (camps.length === 0) return;
 
     // Initialize the map
-    const map = L.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], 7);
+    const map = L.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
     mapRef.current = map;
 
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -122,7 +121,7 @@ const MapComponent = () => {
         mapRef.current.remove();
       }
     };
-  }, [camps, mapLocation?.latitude, mapLocation?.longitude]);
+  }, [camps, mapLocation?.latitude, mapLocation?.longitude, mapLocation?.zoom]);
 
   // Function to update stats
   const updateStats = (camps: Camp[]) => {

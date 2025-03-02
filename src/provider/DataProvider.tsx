@@ -5,6 +5,7 @@ import { createContext, useState, ReactNode } from 'react';
 interface Location {
   latitude: number;
   longitude: number;
+  zoom: number
 }
 
 interface DataContextType {
@@ -18,6 +19,7 @@ const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [mapLocation, setMapLocation] = useState<Location>({
     latitude: 23.8103,
     longitude: 90.4125,
+    zoom: 7,
   });
 
   return <DataContext.Provider value={{ mapLocation, setMapLocation }}>{children}</DataContext.Provider>;
