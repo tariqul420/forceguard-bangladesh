@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <div>
       <HeaderSection />
-      <main className="min-h-[calc(100vh-305px)]">{children}</main>
+      <div className="min-h-[calc(100vh-305px)]">{children}</div>
     </div>
   );
 }
