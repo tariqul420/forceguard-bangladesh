@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="bn" className={hindSiliguri.variable}>
+    <html suppressHydrationWarning lang="bn" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto p-5">
         <DataProvider>
           <Title title="বাংলাদেশে সেনাবাহিনীর ক্যাম্প ও থানার লোকেশন" desc="সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর" />

@@ -1,11 +1,14 @@
 'use client';
 
-import { useState, useEffect, FormEvent } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import axios from 'axios';
 import useData from '@/hook/useData';
+import axios from 'axios';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
+import { FormEvent, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import { FaSearch, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaSearch, FaTimes } from 'react-icons/fa';
+import { FaLocationDot } from 'react-icons/fa6';
+import { FiHome } from 'react-icons/fi';
 
 interface Camp {
   name: string;
@@ -143,10 +146,16 @@ const HeroBtn = () => {
         </div>
       </form>
 
-      <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
-        <FaMapMarkerAlt />
-        {pathname === '/army/all-camp' ? 'হোমে যান' : 'আপনার লোকেশন খুঁজুন'}
-      </button>
+      <div className="flex items-center justify-center gap-8">
+        <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
+          {pathname === '/army/all-camp' ? <FaMapMarkedAlt /> : <FaLocationDot />}
+          {pathname === '/army/all-camp' ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
+        </button>
+        <Link href={'/'} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
+          <FiHome />
+          হোমে যান
+        </Link>
+      </div>
     </div>
   );
 };
