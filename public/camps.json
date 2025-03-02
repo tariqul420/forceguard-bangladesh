@@ -9,7 +9,8 @@
         "phoneNumbers": [
             "01769072556",
             "01769072456"
-        ]
+        ],
+        "division": "বরিশাল (Barisal)"
     },
     {
         "name": "পটুয়াখালী (Patuakhali)",
@@ -21,7 +22,8 @@
         "phoneNumbers": [
             "01769073120",
             "01769073122"
-        ]
+        ],
+        "division": "বরিশাল (Barisal)"
     },
     {
         "name": "ঝালকাঠী (Jhalokathi)",
@@ -33,7 +35,8 @@
         "phoneNumbers": [
             "01769072108",
             "01769072122"
-        ]
+        ],
+        "division": "বরিশাল (Barisal)"
     },
     {
         "name": "পিরোজপুর (Pirojpur)",
@@ -45,7 +48,8 @@
         "phoneNumbers": [
             "01769078298",
             "01769078308"
-        ]
+        ],
+        "division": "বরিশাল (Barisal)"
     },
     {
         "name": "নোয়াখালী (Noakhali)",
@@ -57,7 +61,8 @@
         "phoneNumbers": [
             "01769331519",
             "01769331520"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "চাঁদপুর (Chadpur)",
@@ -69,7 +74,8 @@
         "phoneNumbers": [
             "01815440543",
             "01568734976"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "ফেনী (Feni)",
@@ -81,7 +87,8 @@
         "phoneNumbers": [
             "01769335461",
             "01769335434"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "লক্ষীপুর (Lakshmipur)",
@@ -93,7 +100,8 @@
         "phoneNumbers": [
             "01721821096",
             "01708762110"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "কুমিল্লা (Cumilla)",
@@ -105,7 +113,8 @@
         "phoneNumbers": [
             "01334616159",
             "01334616160"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "ব্রাক্ষ্মণবাড়ীয়া (Brahmanbaria)",
@@ -117,7 +126,8 @@
         "phoneNumbers": [
             "01769322491",
             "01769332609"
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "কক্সবাজার (Cox's Bazar)",
@@ -161,7 +171,8 @@
                 "latitude": "22.1094136",
                 "longitude": "91.9720398"
             }
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "চট্টগ্রাম (Chattogram)",
@@ -185,7 +196,8 @@
                 "latitude": "22.3237417",
                 "longitude": "91.8083468"
             }
-        ]
+        ],
+        "division": "চট্টগ্রাম (Chittagong)"
     },
     {
         "name": "মাদারীপুর (Madaripur)",
@@ -197,7 +209,8 @@
         "phoneNumbers": [
             "01769072102",
             "01769072103"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "কিশোরগঞ্জ (Kishoreganj)",
@@ -209,7 +222,8 @@
         "phoneNumbers": [
             "01769192382",
             "01769202366"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "টাঙ্গাইল (Tangail)",
@@ -221,7 +235,8 @@
         "phoneNumbers": [
             "01769212651",
             "01769210870"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "গোপালগঞ্জ (Gopalganj)",
@@ -233,7 +248,8 @@
         "phoneNumbers": [
             "01769552436",
             "01769552448"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "রাজবাড়ী (Rajbari)",
@@ -245,7 +261,8 @@
         "phoneNumbers": [
             "01769552514",
             "01769552528"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "গাজীপুর (Gazipur)",
@@ -257,7 +274,8 @@
         "phoneNumbers": [
             "01785349842",
             "01769092106"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "মুন্সিগঞ্জ (Munsiganj)",
@@ -269,7 +287,8 @@
         "phoneNumbers": [
             "01769082798",
             "01769082784"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "মানিকগঞ্জ (Manikganj)",
@@ -281,7 +300,8 @@
         "phoneNumbers": [
             "01769092540",
             "01769092542"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "নারায়নগঞ্জ (Narayanganj)",
@@ -292,7 +312,8 @@
         "description": "",
         "phoneNumbers": [
             "01732051858"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "নরিসিংদী (Narsingdi)",
@@ -304,7 +325,8 @@
         "phoneNumbers": [
             "01769082766",
             "01769082778"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "শরিয়তপুর (Sheriyatpur)",
@@ -316,7 +338,8 @@
         "phoneNumbers": [
             "01769097660",
             "01769097655"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ফরিদপুর (Faridpur)",
@@ -328,7 +351,8 @@
         "phoneNumbers": [
             "01769092102",
             "01742966162"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা লালবাগ-কাঁটাবন (Dhaka Lalbagh-Kataban)",
@@ -387,7 +411,8 @@
                 "latitude": "23.7356962",
                 "longitude": "90.3845533"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা গুলশান-বনশ্রী (Dhaka Gulshan-Banasree)",
@@ -451,7 +476,8 @@
                 "latitude": "23.7621319",
                 "longitude": "90.4276446"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা মিরপুর-উত্তরা (Dhaka Mirpur-Uttara)",
@@ -485,7 +511,8 @@
                 "latitude": "23.8397788",
                 "longitude": "90.4074584"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা মতিঝিল (Motijheel)",
@@ -496,7 +523,8 @@
         "description": "",
         "phoneNumbers": [
             "01769092464"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা সেগুনবাগিচা-ইস্কাটন (Dhaka Segunbagicha-Iskaton)",
@@ -529,7 +557,8 @@
                 "latitude": "23.7486808",
                 "longitude": "90.396275"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকার রাজারবাগ - গুলিস্তান (Dhaka Rajarbag - Gulistan)",
@@ -557,7 +586,8 @@
                 "latitude": "23.7221697",
                 "longitude": "90.4021155"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "পুরান ঢাকা (Old Dhaka)",
@@ -568,7 +598,8 @@
         "description": "",
         "phoneNumbers": [
             "01769093266"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা বংশাল (Dhaka Bangshal)",
@@ -579,7 +610,8 @@
         "description": "",
         "phoneNumbers": [
             "01769093270"
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "ঢাকা ডেমরা - যাত্রাবাড়ী (Dhaka Demra - Jatrabari)",
@@ -603,7 +635,8 @@
                 "latitude": "23.7215122",
                 "longitude": "90.4591939"
             }
-        ]
+        ],
+        "division": "ঢাকা (Dhaka)"
     },
     {
         "name": "শেরপুর (Sherpur)",
@@ -615,7 +648,8 @@
         "phoneNumbers": [
             "01769202516",
             "01769202524"
-        ]
+        ],
+        "division": "ময়মনসিংহ (Mymensingh)"
     },
     {
         "name": "নেত্রকোণা (Netrokona)",
@@ -627,7 +661,8 @@
         "phoneNumbers": [
             "01769202478",
             "01769202448"
-        ]
+        ],
+        "division": "ময়মনসিংহ (Mymensingh)"
     },
     {
         "name": "জামালপুর (Jamalpur)",
@@ -639,7 +674,8 @@
         "phoneNumbers": [
             "01769192545",
             "01769192550"
-        ]
+        ],
+        "division": "ময়মনসিংহ (Mymensingh)"
     },
     {
         "name": "ময়মনসিংহ (Mymensingh)",
@@ -651,7 +687,8 @@
         "phoneNumbers": [
             "01769208151",
             "01769208165"
-        ]
+        ],
+        "division": "ময়মনসিংহ (Mymensingh)"
     },
     {
         "name": "বাগেরহাট (Bagerhat)",
@@ -663,7 +700,8 @@
         "phoneNumbers": [
             "01769072514",
             "01769072536"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "কুষ্টিয়া (Kushtia)",
@@ -675,7 +713,8 @@
         "phoneNumbers": [
             "01769552362",
             "01769552366"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "চায়াডাঙ্গা (Chuadanga)",
@@ -687,7 +726,8 @@
         "phoneNumbers": [
             "01769552380",
             "01769552382"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "মেহেরপুর (Meherpur)",
@@ -699,7 +739,8 @@
         "phoneNumbers": [
             "01769552398",
             "02479921153"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "নড়াইল (Narail)",
@@ -711,7 +752,8 @@
         "phoneNumbers": [
             "01769552456",
             "01769552457"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "মাগুরা (Magura)",
@@ -723,7 +765,8 @@
         "phoneNumbers": [
             "01769554505",
             "01769554506"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "ঝিনাইদহ (Jhenaidah)",
@@ -735,7 +778,8 @@
         "phoneNumbers": [
             "01769552158",
             "01769552172"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "যশোর (Jashore)",
@@ -747,7 +791,8 @@
         "phoneNumbers": [
             "01769552610",
             "01769009245"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "খুলনা (Khulna)",
@@ -759,7 +804,8 @@
         "phoneNumbers": [
             "01769552616",
             "01769552618"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "সাতক্ষীরা (Satkhira)",
@@ -771,7 +817,8 @@
         "phoneNumbers": [
             "01769552536",
             "01769552548"
-        ]
+        ],
+        "division": "খুলনা (Khulna)"
     },
     {
         "name": "রাজশাহী (Rajshahi)",
@@ -783,7 +830,8 @@
         "phoneNumbers": [
             "01769112386",
             "01769112388"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "চাঁপাইনবাবগঞ্জ (Chapainawabganj)",
@@ -795,7 +843,8 @@
         "phoneNumbers": [
             "01769112070",
             "01769112372"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "পাবনা (Pabna)",
@@ -807,7 +856,8 @@
         "phoneNumbers": [
             "01769122478",
             "01769112480"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "সিরাজগঞ্জ (Sirajganj)",
@@ -819,7 +869,8 @@
         "phoneNumbers": [
             "01769122462",
             "01769122264"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "নাটোর (Natore)",
@@ -831,7 +882,8 @@
         "phoneNumbers": [
             "01769112446",
             "01769112448"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "নওগাঁ (Naogaon)",
@@ -843,7 +895,8 @@
         "phoneNumbers": [
             "01769122115",
             "01769122108"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "জয়পুরহাট (Joypurhat)",
@@ -854,7 +907,8 @@
         "description": "",
         "phoneNumbers": [
             "01769112634"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "বগুড়া (Bogra)",
@@ -866,7 +920,8 @@
         "phoneNumbers": [
             "01769112594",
             "01769112170"
-        ]
+        ],
+        "division": "রাজশাহী (Rajshahi)"
     },
     {
         "name": "রংপুর (Rangpur)",
@@ -878,7 +933,8 @@
         "phoneNumbers": [
             "01769662554",
             "01769662516"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "দিনাজপুর (Dinajpur)",
@@ -890,7 +946,8 @@
         "phoneNumbers": [
             "02589921400",
             "02589682414"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "নীলফামারী (Nilphamari)",
@@ -902,7 +959,8 @@
         "phoneNumbers": [
             "01769682502",
             "01769682512"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "লালমনিরহাট (Lalmonirhat)",
@@ -914,7 +972,8 @@
         "phoneNumbers": [
             "01769682366",
             "01769682362"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "কুড়িগ্রাম (Kurigram)",
@@ -926,7 +985,8 @@
         "phoneNumbers": [
             "01769662534",
             "01769662536"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "ঠাকুরগাঁও (Thakurgaon)",
@@ -938,7 +998,8 @@
         "phoneNumbers": [
             "01769666062",
             "01769672616"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "পঞ্চগড় (Panchagarh)",
@@ -950,7 +1011,8 @@
         "phoneNumbers": [
             "01973000662",
             "01769662661"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "গাইবান্ধা (Gaibandha)",
@@ -962,7 +1024,8 @@
         "phoneNumbers": [
             "01610652525",
             "01754585486"
-        ]
+        ],
+        "division": "রংপুর (Rangpur)"
     },
     {
         "name": "সিলেট (Sylhet)",
@@ -974,7 +1037,8 @@
         "phoneNumbers": [
             "01769177268",
             "01987833301"
-        ]
+        ],
+        "division": "সিলেট (Sylhet)"
     },
     {
         "name": "হবিগঞ্জ (Hobiganj)",
@@ -986,7 +1050,8 @@
         "phoneNumbers": [
             "01769172596",
             "01769172616"
-        ]
+        ],
+        "division": "সিলেট (Sylhet)"
     },
     {
         "name": "সুনামগঞ্জ (Sunamganj)",
@@ -998,7 +1063,8 @@
         "phoneNumbers": [
             "01769172420",
             "01769172430"
-        ]
+        ],
+        "division": "সিলেট (Sylhet)"
     },
     {
         "name": "মৌলভীবাজার (Moulvibazar)",
@@ -1010,6 +1076,7 @@
         "phoneNumbers": [
             "01769175680",
             "01769172400"
-        ]
+        ],
+        "division": "সিলেট (Sylhet)"
     }
 ]

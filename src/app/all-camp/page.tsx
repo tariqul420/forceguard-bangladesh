@@ -9,26 +9,7 @@ type Camp = {
   };
   description: string;
   phoneNumbers: string[];
-};
-
-const getDivision = (campName: string) => {
-  const divisionMapping: Record<string, string[]> = {
-    'ঢাকা': ['ঢাকা', 'গাজীপুর', 'মুন্সিগঞ্জ', 'নারায়ণগঞ্জ', 'মানিকগঞ্জ', 'নরসিংদী', 'কিশোরগঞ্জ', 'টাঙ্গাইল', 'মাদারীপুর', 'শরিয়তপুর', 'ফরিদপুর', 'রাজবাড়ী', 'গোপালগঞ্জ'],
-    'চট্টগ্রাম': ['চট্টগ্রাম', 'কক্সবাজার', 'নোয়াখালী', 'ফেনী', 'লক্ষ্মীপুর', 'চাঁদপুর', 'কুমিল্লা', 'ব্রাহ্মণবাড়িয়া'],
-    'খুলনা': ['খুলনা', 'বাগেরহাট', 'সাতক্ষীরা', 'যশোর', 'ঝিনাইদহ', 'কুষ্টিয়া', 'চুয়াডাঙ্গা', 'মেহেরপুর', 'নড়াইল', 'মাগুরা'],
-    'রাজশাহী': ['রাজশাহী', 'নাটোর', 'নওগাঁ', 'চাঁপাইনবাবগঞ্জ', 'পাবনা', 'সিরাজগঞ্জ', 'বগুড়া', 'জয়পুরহাট'],
-    'বরিশাল': ['বরিশাল', 'পটুয়াখালী', 'ভোলা', 'ঝালকাঠি', 'পিরোজপুর'],
-    'সিলেট': ['সিলেট', 'মৌলভীবাজার', 'হবিগঞ্জ', 'সুনামগঞ্জ'],
-    'রংপুর': ['রংপুর', 'দিনাজপুর', 'নীলফামারী', 'কুড়িগ্রাম', 'লালমনিরহাট', 'গাইবান্ধা', 'ঠাকুরগাঁও', 'পঞ্চগড়'],
-    'ময়মনসিংহ': ['ময়মনসিংহ', 'নেত্রকোণা', 'জামালপুর', 'শেরপুর']
-  };
-
-  for (const [division, districts] of Object.entries(divisionMapping)) {
-    if (districts.some(district => campName.includes(district))) {
-      return division;
-    }
-  }
-  return 'অন্যান্য';
+  division: string;
 };
 
 const Page = async () => {
@@ -37,7 +18,7 @@ const Page = async () => {
   const camps: Camp[] = JSON.parse(fileContents);
 
   return (
-    <div className='my-12'>
+    <div className="my-12">
       <h1 className="text-2xl font-bold text-center">সেনা ক্যাম্প তথ্য</h1>
 
       <div className="mt-5 overflow-x-auto">
@@ -55,8 +36,8 @@ const Page = async () => {
               <tr key={index} className="hover:bg-gray-100">
                 <td className="px-4 py-2">{camp.name}</td>
                 <td className="px-4 py-2">{camp.description}</td>
-                <td className="px-4 py-2">{getDivision(camp.name)}</td>
-                <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(", ") : "N/A"}</td>
+                <td className="px-4 py-2">{camp?.division ? camp?.division : 'অন্যান্য'}</td>
+                <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(', ') : 'N/A'}</td>
               </tr>
             ))}
           </tbody>
