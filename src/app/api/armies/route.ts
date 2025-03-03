@@ -1,16 +1,23 @@
+import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Army from "@/models/Army";
-import { NextResponse } from "next/server";
 
-// GET request handler
-export async function GET() {
+export async function GET(req: NextRequest): Promise<NextResponse> {
     await dbConnect();
 
     try {
-        const armies = await Army.find();
+        const { searchParams } = new URL(req.url);
+        const name: string | null = searchParams.get("name");
+
+        const query: Partial<Record<string, unknown>> = {};
+
+        if (name) query.name = { $regex: name, $options: "i" };
+
+        const armies = await Army.find(query);
+
         return NextResponse.json(armies, { status: 200 });
     } catch (err) {
-        console.log(err);
-        return NextResponse.json({ message: 'Error fetching users' }, { status: 500 });
+        console.error(err);
+        return NextResponse.json({ message: "Error fetching data" }, { status: 500 });
     }
 }

@@ -1,14 +1,20 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-export async function fetchArmyCamps() {
+export async function fetchArmyCamps(searchParams?: { name?: string }) {
   await dbConnect();
-  const services = await Army.find();
+
+  const query: Partial<Record<string, unknown>> = {};
+  if (searchParams?.name) {
+    query.name = { $regex: searchParams.name, $options: 'i' };
+  }
+
+  const services = await Army.find(query);
   return services;
 }
 
-const Page = async () => {
-  const camps = (await fetchArmyCamps()) || [];
+const Page = async ({ searchParams }: { searchParams?: { name?: string } }) => {
+  const camps = (await fetchArmyCamps(searchParams)) || [];
 
   return (
     <div className="my-12">
@@ -25,14 +31,22 @@ const Page = async () => {
             </tr>
           </thead>
           <tbody>
-            {camps.map((camp, index) => (
-              <tr key={index} className="hover:bg-gray-100">
-                <td className="px-4 py-2">{camp.name}</td>
-                <td className="px-4 py-2">{camp.description}</td>
-                <td className="px-4 py-2">{camp?.division ? camp?.division : 'অন্যান্য'}</td>
-                <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(', ') : 'N/A'}</td>
+            {camps.length > 0 ? (
+              camps.map((camp, index) => (
+                <tr key={index} className="hover:bg-gray-100">
+                  <td className="px-4 py-2">{camp.name}</td>
+                  <td className="px-4 py-2">{camp.description}</td>
+                  <td className="px-4 py-2">{camp?.division ? camp?.division : 'অন্যান্য'}</td>
+                  <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(', ') : 'N/A'}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={4} className="text-center text-gray-500 py-4">
+                  ❌ কোনো ক্যাম্প পাওয়া যায়নি
+                </td>
               </tr>
-            ))}
+            )}
           </tbody>
         </table>
       </div>
