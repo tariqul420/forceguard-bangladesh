@@ -1,7 +1,11 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-const Page = async ({ searchParams }: { searchParams?: { name?: string } }) => {
+type PageProps = {
+  searchParams?: Record<string, string | undefined>;
+};
+
+const Page = async ({ searchParams }: PageProps) => {
   await dbConnect();
 
   const query: Partial<Record<string, unknown>> = {};
@@ -31,7 +35,7 @@ const Page = async ({ searchParams }: { searchParams?: { name?: string } }) => {
                 <tr key={index} className="hover:bg-gray-100">
                   <td className="px-4 py-2">{camp.name}</td>
                   <td className="px-4 py-2">{camp.description}</td>
-                  <td className="px-4 py-2">{camp?.division ? camp?.division : 'অন্যান্য'}</td>
+                  <td className="px-4 py-2">{camp.division || 'অন্যান্য'}</td>
                   <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(', ') : 'N/A'}</td>
                 </tr>
               ))
