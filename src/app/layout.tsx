@@ -1,5 +1,3 @@
-import FooterSection from '@/components/FooterSection';
-import Title from '@/components/Title';
 import DataProvider from '@/provider/DataProvider';
 import type { Metadata } from 'next';
 import { Hind_Siliguri } from 'next/font/google';
@@ -42,9 +40,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="bn" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto p-5">
         <DataProvider>
-          <Title title="বাংলাদেশে সেনাবাহিনীর ক্যাম্প ও থানার লোকেশন" desc="সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর" />
           {children}
-          <FooterSection />
           <Toaster position="top-right" reverseOrder={false} />
         </DataProvider>
       </body>
