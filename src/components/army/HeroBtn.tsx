@@ -27,7 +27,7 @@ const HeroBtn = () => {
 
   useEffect(() => {
     axios
-      .get('/camps.json')
+      .get('/api/armies')
       .then(({ data }) => {
         setCamps(data);
         if (data.length > 0) {
