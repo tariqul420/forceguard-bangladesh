@@ -7,6 +7,7 @@ import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'leaflet/dist/leaflet.css';
 import { useEffect, useRef, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 interface Camp {
   name: string;
@@ -22,22 +23,29 @@ const MapComponent = () => {
   const [camps, setCamps] = useState<Camp[]>([]);
   const mapRef = useRef<L.Map | null>(null);
   const { mapLocation } = useData();
+  const searchParams = useSearchParams();
+  const searchValue = searchParams.get('name') || '';
 
   useEffect(() => {
-    fetch('/api/armies')
-      .then((response) => response.json())
-      .then((data: Camp[]) => {
+    const fetchCamps = async () => {
+      try {
+        const response = await fetch(`/api/armies?name=${encodeURIComponent(searchValue)}`);
+        const data: Camp[] = await response.json();
         setCamps(data);
-      });
-  }, []);
+      } catch (error) {
+        console.error('Error fetching camps:', error);
+      }
+    };
+
+    fetchCamps();
+  }, [searchValue]);
 
   useEffect(() => {
     if (camps.length === 0) return;
 
-    const map = Leaflet.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
+    const map = Leaflet.map('map').setView([mapLocation.latitude, mapLocation.longitude], mapLocation.zoom);
     mapRef.current = map;
 
-    // Define multiple map layers
     const layers = {
       'Google Terrain': Leaflet.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
@@ -63,13 +71,9 @@ const MapComponent = () => {
       }),
     };
 
-    // Add default layer
-    layers['OpenStreetMap'].addTo(map);
-
-    // Layer control to switch between views
+    layers.OpenStreetMap.addTo(map);
     Leaflet.control.layers(layers).addTo(map);
 
-    // Define custom icon
     const customIcon = Leaflet.icon({
       iconUrl: '/bd_army.png',
       iconSize: [30, 30],
@@ -77,21 +81,14 @@ const MapComponent = () => {
       popupAnchor: [0, -30],
     });
 
-    // Marker cluster group
-    const markers = Leaflet.markerClusterGroup({
-      disableClusteringAtZoom: 10,
-      spiderfyOnMaxZoom: true,
-      showCoverageOnHover: true,
-      zoomToBoundsOnClick: true,
-    });
+    const markers = Leaflet.markerClusterGroup();
 
-    // Add camp markers
     camps.forEach((camp) => {
       const lat = parseFloat(camp.location.latitude);
       const lng = parseFloat(camp.location.longitude);
 
       if (!isNaN(lat) && !isNaN(lng)) {
-        const popupContent = `
+        const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(`
           <div class="p-4">
             <h3 class="text-lg font-bold text-green-700">${camp?.name}</h3>
             ${camp?.description ? `<p class="text-sm text-gray-600 mt-2">${camp?.description}</p>` : ''}
@@ -103,52 +100,21 @@ const MapComponent = () => {
                   </div>`
                 : ''
             }
-          </div>
-        `;
-
-        const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(popupContent);
+          </div>`);
         markers.addLayer(marker);
       }
     });
 
     map.addLayer(markers);
 
-    // User Location Icon
-    const userLocationIcon = Leaflet.icon({
-      iconUrl: '/location_icon.png',
-      iconSize: [50, 50],
-      iconAnchor: [12, 25],
-      popupAnchor: [0, -25],
-    });
-
-    // Get User Location
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          Leaflet.marker([latitude, longitude], { icon: userLocationIcon }).bindPopup('You are here!').addTo(map);
-
-          map.setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
-        },
-        (error) => {
-          console.error('Error getting location:', error);
-        },
-      );
-    }
-
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
       }
     };
-  }, [camps, mapLocation?.latitude, mapLocation?.longitude, mapLocation?.zoom]);
+  }, [camps, mapLocation]);
 
-  return (
-    <div>
-      {/* Map container */}
-      <div id="map" className="w-full h-[600px] border-2 border-green-500 rounded-xl"></div>
-    </div>
-  );
+  return <div id="map" className="w-full h-[600px] border-2 border-green-500 rounded-xl"></div>;
 };
 
 export default MapComponent;
