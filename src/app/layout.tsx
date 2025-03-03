@@ -39,10 +39,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="bn" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto p-5">
-        <DataProvider>
-          {children}
-          <Toaster position="top-right" reverseOrder={false} />
-        </DataProvider>
+          <DataProvider>
+            {children}
+            <Toaster position="top-right" reverseOrder={false} />
+          </DataProvider>
       </body>
     </html>
   );

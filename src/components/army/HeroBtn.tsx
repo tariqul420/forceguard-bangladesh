@@ -80,7 +80,7 @@ const HeroBtn = () => {
   };
 
   const handleLocation = () => {
-    if (pathname === '/army/all-camp') {
+    if (pathname === '/army/all-camp' || pathname?.startsWith('/army/division')) {
       router.push('/army');
     } else if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -148,9 +148,10 @@ const HeroBtn = () => {
 
       <div className="flex items-center justify-center gap-8">
         <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
-          {pathname === '/army/all-camp' ? <FaMapMarkedAlt /> : <FaLocationDot />}
-          {pathname === '/army/all-camp' ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
+          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? <FaMapMarkedAlt /> : <FaLocationDot />}
+          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
         </button>
+
         <Link href={'/'} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
           <FiHome />
           হোমে যান

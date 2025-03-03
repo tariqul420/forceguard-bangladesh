@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useState, useRef } from 'react';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import useData from '@/hook/useData';
+import Leaflet from 'leaflet';
+import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
-import 'leaflet.markercluster';
-import useData from '@/hook/useData';
+import 'leaflet/dist/leaflet.css';
+import { useEffect, useRef, useState } from 'react';
 
 interface Camp {
   name: string;
@@ -24,7 +24,7 @@ const MapComponent = () => {
   const { mapLocation } = useData();
 
   useEffect(() => {
-    fetch('/camps.json')
+    fetch('/api/armies')
       .then((response) => response.json())
       .then((data: Camp[]) => {
         setCamps(data);
@@ -34,31 +34,31 @@ const MapComponent = () => {
   useEffect(() => {
     if (camps.length === 0) return;
 
-    const map = L.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
+    const map = Leaflet.map('map').setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
     mapRef.current = map;
 
     // Define multiple map layers
     const layers = {
-      'Google Terrain': L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+      'Google Terrain': Leaflet.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google',
       }),
-      OpenStreetMap: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      OpenStreetMap: Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
       }),
-      'Google Satellite': L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      'Google Satellite': Leaflet.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google',
       }),
-      'Google Streets': L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+      'Google Streets': Leaflet.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google',
       }),
-      'Google Hybrid': L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+      'Google Hybrid': Leaflet.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google',
       }),
-      'Esri World Imagery': L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      'Esri World Imagery': Leaflet.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: '&copy; Esri',
       }),
     };
@@ -67,10 +67,10 @@ const MapComponent = () => {
     layers['OpenStreetMap'].addTo(map);
 
     // Layer control to switch between views
-    L.control.layers(layers).addTo(map);
+    Leaflet.control.layers(layers).addTo(map);
 
     // Define custom icon
-    const customIcon = L.icon({
+    const customIcon = Leaflet.icon({
       iconUrl: '/bd_army.png',
       iconSize: [30, 30],
       iconAnchor: [15, 30],
@@ -78,7 +78,7 @@ const MapComponent = () => {
     });
 
     // Marker cluster group
-    const markers = L.markerClusterGroup({
+    const markers = Leaflet.markerClusterGroup({
       disableClusteringAtZoom: 10,
       spiderfyOnMaxZoom: true,
       showCoverageOnHover: true,
@@ -106,7 +106,7 @@ const MapComponent = () => {
           </div>
         `;
 
-        const marker = L.marker([lat, lng], { icon: customIcon }).bindPopup(popupContent);
+        const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(popupContent);
         markers.addLayer(marker);
       }
     });
@@ -114,7 +114,7 @@ const MapComponent = () => {
     map.addLayer(markers);
 
     // User Location Icon
-    const userLocationIcon = L.icon({
+    const userLocationIcon = Leaflet.icon({
       iconUrl: '/location_icon.png',
       iconSize: [50, 50],
       iconAnchor: [12, 25],
@@ -126,7 +126,7 @@ const MapComponent = () => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          L.marker([latitude, longitude], { icon: userLocationIcon }).bindPopup('You are here!').addTo(map);
+          Leaflet.marker([latitude, longitude], { icon: userLocationIcon }).bindPopup('You are here!').addTo(map);
 
           map.setView([mapLocation?.latitude, mapLocation?.longitude], mapLocation?.zoom);
         },
