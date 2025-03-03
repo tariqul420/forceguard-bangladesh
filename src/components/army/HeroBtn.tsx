@@ -50,11 +50,11 @@ const HeroBtn = () => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full flex flex-col gap-4 p-4 md:p-6 lg:p-8">
       <div className="relative w-full flex items-center">
         <FaSearch className="absolute text-gray-500 left-4" />
         <input
-          className="w-full py-3 px-4 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="w-full py-3 px-4 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm md:text-base"
           type="text"
           placeholder="ক্যাম্প খুঁজুন..."
           value={searchValue}
@@ -62,13 +62,19 @@ const HeroBtn = () => {
         />
       </div>
 
-      <div className="flex items-center justify-center gap-8">
-        <button onClick={handleLocation} className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
+        <button 
+          onClick={handleLocation} 
+          className="w-full  px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base"
+        >
           {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? <FaMapMarkedAlt /> : <FaLocationDot />}
           {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
         </button>
 
-        <Link href="/" className="w-full px-5 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer">
+        <Link 
+          href="/" 
+          className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base"
+        >
           <FiHome />
           হোমে যান
         </Link>
