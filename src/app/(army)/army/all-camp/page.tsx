@@ -2,7 +2,7 @@ import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
 type Props = {
-  searchParams: { name?: string };
+  searchParams: { name?: string | undefined };
 };
 
 const Page = async ({ searchParams }: Props) => {
