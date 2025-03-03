@@ -1,7 +1,7 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-export async function fetchArmyCamps(searchParams?: { name?: string }) {
+const Page = async ({ searchParams }: { searchParams?: { name?: string } }) => {
   await dbConnect();
 
   const query: Partial<Record<string, unknown>> = {};
@@ -9,12 +9,7 @@ export async function fetchArmyCamps(searchParams?: { name?: string }) {
     query.name = { $regex: searchParams.name, $options: 'i' };
   }
 
-  const services = await Army.find(query);
-  return services;
-}
-
-const Page = async ({ searchParams }: { searchParams?: { name?: string } }) => {
-  const camps = (await fetchArmyCamps(searchParams)) || [];
+  const camps = await Army.find(query);
 
   return (
     <div className="my-12">
