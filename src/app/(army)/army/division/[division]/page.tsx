@@ -1,29 +1,27 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-type Params = {
-  division: string;
-};
+type dParams = Promise<{ division: string }>;
 
-type SearchParams = {
-  name?: string;
-};
+type srcParams = Promise<{ name: string }>;
 
-const Page = async ({ params, searchParams }: { params: Params; searchParams?: SearchParams }) => {
-  const division = decodeURIComponent(params.division);
+const Page = async ({ params, searchParams }: { params: dParams; searchParams?: srcParams }) => {
+  const { name } = (await searchParams) || {};
+  const { division } = (await params) || {};
+  const divisionDec = decodeURIComponent(division);
   await dbConnect();
 
   // Build the query conditionally
-  const query: Partial<Record<string, unknown>> = { division };
-  if (searchParams?.name) {
-    query.name = { $regex: searchParams.name, $options: 'i' };
+  const query: Partial<Record<string, unknown>> = { division: divisionDec };
+  if (name) {
+    query.name = { $regex: name, $options: 'i' };
   }
 
   const data = await Army.find(query);
 
   return (
     <div className="my-12">
-      <h1 className="text-2xl font-bold text-center">সেনা ক্যাম্প তথ্য || {division}</h1>
+      <h1 className="text-2xl font-bold text-center">সেনা ক্যাম্প তথ্য || {divisionDec}</h1>
 
       <div className="mt-5 overflow-x-auto">
         <table className="w-full border-collapse">

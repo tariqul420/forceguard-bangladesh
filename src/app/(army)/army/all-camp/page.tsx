@@ -1,16 +1,15 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-type Props = {
-  searchParams: { name?: string | undefined };
-};
+type srcParams = Promise<{ name: string }>;
 
-const Page = async ({ searchParams }: Props) => {
+const Page = async ({ searchParams }: { searchParams: srcParams }) => {
+  const { name } = (await searchParams) || {};
   await dbConnect();
 
   const query: Partial<Record<string, unknown>> = {};
-  if (searchParams?.name) {
-    query.name = { $regex: searchParams.name, $options: 'i' };
+  if (name) {
+    query.name = { $regex: name, $options: 'i' };
   }
 
   const camps = await Army.find(query);
