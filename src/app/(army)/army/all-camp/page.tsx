@@ -1,11 +1,11 @@
 import dbConnect from '@/lib/dbConnect';
 import Army from '@/models/Army';
 
-type PageProps = {
-  searchParams?: Record<string, string | undefined>;
+type Props = {
+  searchParams: { name?: string };
 };
 
-const Page = async ({ searchParams }: PageProps) => {
+const Page = async ({ searchParams }: Props) => {
   await dbConnect();
 
   const query: Partial<Record<string, unknown>> = {};
