@@ -486,5 +486,434 @@
         ],
         "division": "রাজশাহী (Rajshahi)",
         "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "জয়পুরহাট সদর (Joypurhat Sadar)",
+        "location": {
+            "latitude": "25.103129",
+            "longitude": "89.023278"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৮২",
+            "০১৭৬৯-৬৯৩৪৮৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "জয়পুরহাট (Joypurhat)"
+    },
+    {
+        "name": "কালাই (Kalai)",
+        "location": {
+            "latitude": "25.06637",
+            "longitude": "89.162268"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৮০",
+            "০১৭৬৯৬৪৩৪৮৭"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "জয়পুরহাট (Joypurhat)"
+    },
+    {
+        "name": "ক্ষেতলাল (Khetlal)",
+        "location": {
+            "latitude": "25.038775",
+            "longitude": "89.119643"
+        },
+        "phoneNumbers": [
+            "০১৭১৩৩৭৪০৮৪",
+            "০১৭৬৯৬৯৩৪৮৮"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "জয়পুরহাট (Joypurhat)"
+    },
+    {
+        "name": "আক্কেলপুর (Akkelpur)",
+        "location": {
+            "latitude": "24.9655882",
+            "longitude": "89.0207442"
+        },
+        "phoneNumbers": [
+            "০১৩২০১২৭৬৭৩",
+            "০১৩২০১২৭৬৭৪"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "জয়পুরহাট (Joypurhat)"
+    },
+    {
+        "name": "পাঁচবিবি (Panchbibi)",
+        "location": {
+            "latitude": "25.189848",
+            "longitude": "89.018183"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৭৫৯৬",
+            "০১৩২০-১২৭৫৯৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "জয়পুরহাট (Joypurhat)"
+    },
+    {
+        "name": "মহাদেবপুর (Mahadebpur)",
+        "location": {
+            "latitude": "24.91986",
+            "longitude": "88.747024"
+        },
+        "phoneNumbers": [
+            "০১৩২০১২৩৭২০",
+            "০১৩২০১২৩৭২১"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "বদলগাছী (Badalgachhi)",
+        "location": {
+            "latitude": "24.966453",
+            "longitude": "88.905488"
+        },
+        "phoneNumbers": [
+            "01320-123694",
+            "01320-123699"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "পত্নীতলা (Patnitala)",
+        "location": {
+            "latitude": "25.048485",
+            "longitude": "88.75028"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৪২",
+            "০১৭৬৯-৬৯১০৬২"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "ধামইরহাট থানা (Dhamoirhat Thana)",
+        "location": {
+            "latitude": "25.1494621",
+            "longitude": "88.8540215"
+        },
+        "phoneNumbers": [
+            "01320123668",
+            "01320123669"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "নিয়ামতপুর (Niamatpur)",
+        "location": {
+            "latitude": "24.831665",
+            "longitude": "88.572523"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৪৩",
+            "০১৭৬৯-৬৯১০৬১"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "মান্দা (Manda)",
+        "location": {
+            "latitude": "24.7950075",
+            "longitude": "88.6992799"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৪৪",
+            "01769-691059"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "আত্রাই (Atrai)",
+        "location": {
+            "latitude": "24.6113568",
+            "longitude": "88.9747618"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৩৮",
+            "০১৩২০১২৩৬৪৩"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "রাণীনগর (Raninagar)",
+        "location": {
+            "latitude": "24.7416586",
+            "longitude": "88.9580972"
+        },
+        "phoneNumbers": [
+            "01320123616",
+            "01320123617"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "নওগাঁ সদর মডেল থানা (Naogaon Sadar Model Thana)",
+        "location": {
+            "latitude": "24.824779",
+            "longitude": "88.929489"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৩৬",
+            "০১৭৬৯-৬৯১০৫৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "পোরশা (Porsha)",
+        "location": {
+            "latitude": "25.0255456",
+            "longitude": "88.4503904"
+        },
+        "phoneNumbers": [
+            "01320123855",
+            "০১৭১১৪৬৬৪৪৭"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "সাপাহার (Sapahar)",
+        "location": {
+            "latitude": "25.128127",
+            "longitude": "88.587989"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৩৮৪৫",
+            "০১৭৬৯-৬৯১০৬৪"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নওগাঁ (Naogaon)"
+    },
+    {
+        "name": "কাহালু (Kahaloo)",
+        "location": {
+            "latitude": "24.831581",
+            "longitude": "89.268499"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৬৭৭৩",
+            "০১৩২০-১২৬৭৭৪"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "বগুড়া সদর (Bogura Sadar)",
+        "location": {
+            "latitude": "24.850451",
+            "longitude": "89.372797"
+        },
+        "phoneNumbers": [
+            "01713374061",
+            "01769693322"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "সারিয়াকান্দি (Sariakandi)",
+        "location": {
+            "latitude": "24.888403",
+            "longitude": "89.569417"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৬৫",
+            "01769-693330"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "শাজাহানপুর (Shahjahanpur)",
+        "location": {
+            "latitude": "24.780402",
+            "longitude": "89.393072"
+        },
+        "phoneNumbers": [
+            "০১৩২০১২৬৮৭৭",
+            "০১৩২০১২৬৮৭৮"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "দুপচাঁচিয়া (Dupchanchia)",
+        "location": {
+            "latitude": "24.874927",
+            "longitude": "89.180853"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৬৭",
+            "01769-693332"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "আদমদীঘি (Adamdighi)",
+        "location": {
+            "latitude": "24.819336",
+            "longitude": "89.038278"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৬৬",
+            "০১৭৬৯-৬৯৩৩৩১"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "নন্দীগ্রাম (Nandigram)",
+        "location": {
+            "latitude": "24.645672",
+            "longitude": "89.249534"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৭১",
+            "০১৭৬৯-৬৯৩৩৩৬"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "সোনাতলা (Sonatala)",
+        "location": {
+            "latitude": "25.037478",
+            "longitude": "89.501608"
+        },
+        "phoneNumbers": [
+            "০১৭৬৯-৬৯৩৩২৭",
+            "০১৭০০-৭৭৩২১২"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "ধুনট (Dhunot)",
+        "location": {
+            "latitude": "24.690356",
+            "longitude": "89.532219"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৬৮২৫",
+            "০১৩২০-১২৬৮২৬"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "গাবতলী (Gabtali)",
+        "location": {
+            "latitude": "24.8796113",
+            "longitude": "89.4464476"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৬৪",
+            "০১৭৬৯-৬৯৩৩২৮"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "শেরপুর (Sherpur)",
+        "location": {
+            "latitude": "24.67959",
+            "longitude": "89.414163"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৬৮০০",
+            "০১৩২০-১২৬৭৯৯"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "শিবগঞ্জ (Shibganj)",
+        "location": {
+            "latitude": "25.002512",
+            "longitude": "89.32247"
+        },
+        "phoneNumbers": [
+            "০১৭৬৯-৬৯৩৩২৫",
+            "০১৭১৩-৩৭৪০৬২"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "বগুড়া (Bogura)"
+    },
+    {
+        "name": "ভোলাহাট (Bholahat)",
+        "location": {
+            "latitude": "24.95262",
+            "longitude": "88.196244"
+        },
+        "phoneNumbers": [
+            "01713373823",
+            "01769690434"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "চাঁপাইনবাবগঞ্জ (Chapai Nawabganj)"
+    },
+    {
+        "name": "গোমস্তাপুর (Gomostapur)",
+        "location": {
+            "latitude": "24.780585",
+            "longitude": "88.277842"
+        },
+        "phoneNumbers": [
+            "01320125621",
+            "01320125626"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "চাঁপাইনবাবগঞ্জ (Chapai Nawabganj)"
+    },
+    {
+        "name": "নাচোল (Nachole)",
+        "location": {
+            "latitude": "24.730943",
+            "longitude": "88.423333"
+        },
+        "phoneNumbers": [
+            "01713373822",
+            "01769690433"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "চাঁপাইনবাবগঞ্জ (Chapai Nawabganj)"
+    },
+    {
+        "name": "চাঁপাই নবাবগঞ্জ সদর (Chapai Nawabganj Sadar)",
+        "location": {
+            "latitude": "24.599503",
+            "longitude": "88.268781"
+        },
+        "phoneNumbers": [
+            "01713373819",
+            "01769690430"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "চাঁপাইনবাবগঞ্জ (Chapai Nawabganj)"
+    },
+    {
+        "name": "শিবগঞ্জ (Shibganj)",
+        "location": {
+            "latitude": "24.682944",
+            "longitude": "88.155658"
+        },
+        "phoneNumbers": [
+            "01320125595",
+            "01320125596"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "চাঁপাইনবাবগঞ্জ (Chapai Nawabganj)"
     }
 ]
