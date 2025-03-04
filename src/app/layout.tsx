@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'বাংলাদেশে সেনাবাহিনী ক্যাম্প ও থানা',
     description: 'বাংলাদেশ সেনা ক্যাম্প ও থানার ওয়েবসাইট। এখানে আপনি সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর সম্পর্কিত সকল তথ্য পাবেন।',
-    // url: 'http://localhost:3000',
+    url: 'https://bd-army-police.vercel.app',
     siteName: 'বাংলাদেশে সেনাবাহিনী ক্যাম্প ও থানা',
     images: [
       {
-        url: '/bd_flag.jpg',
+        url: '/images/bd_flag.jpg',
         width: 1200,
         height: 630,
         alt: 'বাংলাদেশে',

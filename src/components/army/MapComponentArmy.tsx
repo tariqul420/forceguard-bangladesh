@@ -17,6 +17,7 @@ interface Camp {
   };
   description?: string;
   phoneNumbers?: string[];
+  division: string
 }
 
 const MapComponentArmy = () => {
@@ -75,7 +76,7 @@ const MapComponentArmy = () => {
     Leaflet.control.layers(layers).addTo(map);
 
     const customIcon = Leaflet.icon({
-      iconUrl: '/bd_army.png',
+      iconUrl: '/images/bd_army.png',
       iconSize: [30, 30],
       iconAnchor: [15, 30],
       popupAnchor: [0, -30],
@@ -91,6 +92,7 @@ const MapComponentArmy = () => {
         const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(`
           <div class="p-4">
             <h3 class="text-lg font-bold text-green-700">${camp?.name}</h3>
+            <h4 class="text-base font-medium text-black">বিভাগ: ${camp?.division}</h4>
             ${camp?.description ? `<p class="text-sm text-gray-600 mt-2">${camp?.description}</p>` : ''}
             ${
               camp?.phoneNumbers && camp?.phoneNumbers?.length > 0
@@ -109,7 +111,7 @@ const MapComponentArmy = () => {
 
     // User Location Icon
     const userLocationIcon = Leaflet.icon({
-      iconUrl: '/location_icon.png',
+      iconUrl: '/images/location_icon.png',
       iconSize: [50, 50],
       iconAnchor: [12, 25],
       popupAnchor: [0, -25],

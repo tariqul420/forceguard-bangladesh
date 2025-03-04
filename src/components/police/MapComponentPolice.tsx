@@ -76,7 +76,7 @@ const MapComponentPolice = () => {
     Leaflet.control.layers(layers).addTo(map);
 
     const customIcon = Leaflet.icon({
-      iconUrl: '/police1.png',
+      iconUrl: '/images/police1.png',
       iconSize: [40, 50],
       iconAnchor: [15, 30],
       popupAnchor: [0, -30],
@@ -111,7 +111,7 @@ const MapComponentPolice = () => {
 
     // User Location Icon
     const userLocationIcon = Leaflet.icon({
-      iconUrl: '/location_icon.png',
+      iconUrl: '/images/location_icon.png',
       iconSize: [50, 50],
       iconAnchor: [12, 25],
       popupAnchor: [0, -25],
