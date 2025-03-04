@@ -35,7 +35,7 @@ const Page = async ({ params }: { params: { division: string } }) => {
           {districtDetails.map(({ _id, count }) => (
             <Link
               key={_id}
-              href={`/police/division/${divisionDec}district/${encodeURIComponent(_id)}`}
+              href={`/police/division/${divisionDec}/district/${encodeURIComponent(_id)}`}
               className="block p-5 border border-gray-200 rounded-2xl shadow-md bg-white 
                          transition-all hover:shadow-lg hover:border-green"
             >
