@@ -32,6 +32,8 @@ const HeroBtn = () => {
   const handleLocation = () => {
     if (pathname === '/army/all-camp' || pathname?.startsWith('/army/division')) {
       router.push('/army');
+    } else if (pathname?.startsWith('/police/all-police-station')) {
+      router.push('/police');
     } else {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -63,18 +65,12 @@ const HeroBtn = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-        <button 
-          onClick={handleLocation} 
-          className="w-full  px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base"
-        >
-          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? <FaMapMarkedAlt /> : <FaLocationDot />}
-          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
+        <button onClick={handleLocation} className="w-full  px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
+          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') || pathname?.startsWith('/police/all-police-station') ? <FaMapMarkedAlt /> : <FaLocationDot />}
+          {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') || pathname?.startsWith('/police/all-police-station') ? 'ম্যাপ পেইজে যান' : 'আপনার লোকেশন খুঁজুন'}
         </button>
 
-        <Link 
-          href="/" 
-          className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base"
-        >
+        <Link href="/" className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
           <FiHome />
           হোমে যান
         </Link>
