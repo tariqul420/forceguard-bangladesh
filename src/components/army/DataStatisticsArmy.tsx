@@ -7,7 +7,7 @@ interface DivisionDocument {
   count: number;
 }
 
-const DataStatistics = async () => {
+const DataStatisticsArmy = async () => {
   await dbConnect();
   const allCamps = await Army.estimatedDocumentCount();
   const divisionDetails: DivisionDocument[] = await Army.aggregate([
@@ -61,4 +61,4 @@ const DataStatistics = async () => {
   );
 };
 
-export default DataStatistics;
+export default DataStatisticsArmy;

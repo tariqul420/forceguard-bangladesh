@@ -1,8 +1,7 @@
-
+import HeroBtn from '../HeroBtn';
 import Title from '../Title';
-import HeroBtn from './HeroBtn';
 
-const HeaderSection = () => {
+const HeaderSectionArmy = () => {
   return (
     <header>
       {/* title and desc */}
@@ -17,4 +16,4 @@ const HeaderSection = () => {
   );
 };
 
-export default HeaderSection;
+export default HeaderSectionArmy;

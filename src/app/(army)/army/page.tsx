@@ -1,5 +1,5 @@
-import DataStatistics from '@/components/army/DataStatistics';
-import MapComponent from '@/components/army/MapComponent';
+import DataStatistics from '@/components/army/DataStatisticsArmy';
+import MapComponent from '@/components/army/MapComponentArmy';
 
 const page = () => {
   return (

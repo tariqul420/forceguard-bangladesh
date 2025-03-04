@@ -1,5 +1,5 @@
-import HeaderSection from '@/components/army/HeaderSectionArmy';
 import FooterSection from '@/components/FooterSection';
+import HeaderSection from '@/components/police/HeaderSectionPolice';
 
 export default function RootLayout({
   children,

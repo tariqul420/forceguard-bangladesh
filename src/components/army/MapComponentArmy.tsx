@@ -19,7 +19,7 @@ interface Camp {
   phoneNumbers?: string[];
 }
 
-const MapComponent = () => {
+const MapComponentArmy = () => {
   const [camps, setCamps] = useState<Camp[]>([]);
   const mapRef = useRef<L.Map | null>(null);
   const { mapLocation } = useData();
@@ -140,4 +140,4 @@ const MapComponent = () => {
   return <div id="map" className="w-full h-[600px] border-2 border-green-500 rounded-xl"></div>;
 };
 
-export default MapComponent;
+export default MapComponentArmy;
