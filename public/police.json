@@ -1,0 +1,490 @@
+[
+    {
+        "name": "গোদাগাড়ী (Godagari)",
+        "location": {
+            "latitude": "24.466577",
+            "longitude": "88.318591"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৫৯৪",
+            "০১৩২০-১২২৫৯৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "মোহনপুর (Mohanpur)",
+        "location": {
+            "latitude": "24.547317",
+            "longitude": "88.646788"
+        },
+        "phoneNumbers": [
+            "01320-122647",
+            "01320-122646"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "বাগমারা (Bagmara)",
+        "location": {
+            "latitude": "24.558216",
+            "longitude": "88.80777"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৬৯৮"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "চারঘাট (Charghat)",
+        "location": {
+            "latitude": "24.282135",
+            "longitude": "88.747146"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৭৫০"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "পুঠিয়া (Puthia)",
+        "location": {
+            "latitude": "24.365452",
+            "longitude": "88.837472"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৬৭২",
+            "০১৩২০-১২২৬৭৩"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "দুর্গাপুর (Durgapur)",
+        "location": {
+            "latitude": "24.446404",
+            "longitude": "88.764045"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৭২৪"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "বাঘা (Bagha)",
+        "location": {
+            "latitude": "24.197475",
+            "longitude": "88.835456"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৭৭৬"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "তানোর (Tanore)",
+        "location": {
+            "latitude": "24.588973",
+            "longitude": "88.576929"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২২৬২০"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "রাজশাহী (Rajshahi)"
+    },
+    {
+        "name": "সুজানগর (Sujanagar)",
+        "location": {
+            "latitude": "23.935457",
+            "longitude": "89.410991"
+        },
+        "phoneNumbers": [
+            "01320-128742"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "ঈশ্বরদী (Ishwardi)",
+        "location": {
+            "latitude": "24.123209",
+            "longitude": "89.065239"
+        },
+        "phoneNumbers": [
+            "01320-128612",
+            "01320-128613"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "ভাঙ্গুড়া (Bhangura)",
+        "location": {
+            "latitude": "24.215888",
+            "longitude": "89.37681"
+        },
+        "phoneNumbers": [
+            "01320-128690",
+            "01320-128691"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "পাবনা সদর (Pabna Sadar)",
+        "location": {
+            "latitude": "24.008844",
+            "longitude": "89.240036"
+        },
+        "phoneNumbers": [
+            "01320-128586",
+            "01320-128587"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "বেড়া (Bera)",
+        "location": {
+            "latitude": "24.081556",
+            "longitude": "89.631495"
+        },
+        "phoneNumbers": [
+            "01320-128768",
+            "01320-128769"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "আটঘরিয়া (Atgharia)",
+        "location": {
+            "latitude": "24.111583",
+            "longitude": "89.24162"
+        },
+        "phoneNumbers": [
+            "01320-128638",
+            "01320-128639"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "চাটমোহর (Chatmohar)",
+        "location": {
+            "latitude": "24.231449",
+            "longitude": "89.287109"
+        },
+        "phoneNumbers": [
+            "01320-128664",
+            "01320-128665"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "সাঁথিয়া (Santhia)",
+        "location": {
+            "latitude": "24.049355",
+            "longitude": "89.516172"
+        },
+        "phoneNumbers": [
+            "01320-128794",
+            "01320-128795"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "ফরিদপুর (Faridpur)",
+        "location": {
+            "latitude": "24.158604",
+            "longitude": "89.445728"
+        },
+        "phoneNumbers": [
+            "01320-128716",
+            "01320-128717"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "আতাইকুলা (Ataikula)",
+        "location": {
+            "latitude": "24.031896",
+            "longitude": "89.412698"
+        },
+        "phoneNumbers": [
+            "01320-128820",
+            "01320-128821"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "আমিনপুর (Aminpur)",
+        "location": {
+            "latitude": "23.91393",
+            "longitude": "89.629832"
+        },
+        "phoneNumbers": [
+            "01320-128846",
+            "01320-128795"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "পাবনা (Pabna)"
+    },
+    {
+        "name": "নাটোর সদর (Natore Sadar)",
+        "location": {
+            "latitude": "24.411638",
+            "longitude": "88.993417"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৫৭৪",
+            "০১৩২০-১২৪৫৭৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "সিংড়া (Singra)",
+        "location": {
+            "latitude": "24.506706",
+            "longitude": "89.142374"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৬০০",
+            "০১৩২০-১২৪৬০১"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "বড়াইগ্রাম (Baraigram)",
+        "location": {
+            "latitude": "24.310614",
+            "longitude": "89.160722"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৭০৪",
+            "০১৩২০-১২৪৭০৫"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "বাগাতিপাড়া (Bagatipara)",
+        "location": {
+            "latitude": "24.312602",
+            "longitude": "88.947673"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৬২৬",
+            "০১৩২০-১২৪৬২৭"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "লালপুর (Lalpur)",
+        "location": {
+            "latitude": "24.1778296",
+            "longitude": "88.9521427"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৬৭৮",
+            "০১৩২০-১২৪৬৭৯"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "গুরুদাসপুর (Gurudaspur)",
+        "location": {
+            "latitude": "24.369071",
+            "longitude": "89.233316"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৪৬৫৩",
+            "01320124652"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "নলডাঙ্গা (Naldanga)",
+        "location": {
+            "latitude": "24.502",
+            "longitude": "88.957187"
+        },
+        "phoneNumbers": [
+            "01320-124730",
+            "01320-124731"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "নাটোর (Natore)"
+    },
+    {
+        "name": "সিরাজগঞ্জ সদর (Sirajganj Sadar)",
+        "location": {
+            "latitude": "24.458092",
+            "longitude": "89.70081"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৩৮",
+            "০১৭৬৯-৬৯১০৩৩"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "শাহজাদপুর (Shahjadpur)",
+        "location": {
+            "latitude": "24.17594",
+            "longitude": "89.59971"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৩৯",
+            "01769-691041"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "উল্লাপাড়া (Ullapara)",
+        "location": {
+            "latitude": "24.313425",
+            "longitude": "89.570526"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪০",
+            "০১৭৬৯-৬৯১০৪২"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "চৌহালি (Chowhali)",
+        "location": {
+            "latitude": "24.150439",
+            "longitude": "89.752722"
+        },
+        "phoneNumbers": [
+            "০১৭৬৯-৬৯১০৪৪",
+            "০১৭০৯-৩৬০১১০"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "তাড়াশ (Tarash)",
+        "location": {
+            "latitude": "24.426974",
+            "longitude": "89.370555"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪২",
+            "০১৭৬৯-৬৯১০৩৮"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "কাজিপুর (Kazipur)",
+        "location": {
+            "latitude": "24.668264",
+            "longitude": "89.644239"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪৩",
+            "01769-691035"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "কামারখন্দ (Kamarkhanda)",
+        "location": {
+            "latitude": "24.375504",
+            "longitude": "89.64196"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪৪",
+            "০১৭৬৯-৬৯১০৩৯"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "রায়গঞ্জ (Raiganj)",
+        "location": {
+            "latitude": "24.507341",
+            "longitude": "89.52517"
+        },
+        "phoneNumbers": [
+            "01320129777",
+            "01320129773"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "বেলকুচি (Belkuchi)",
+        "location": {
+            "latitude": "24.301861",
+            "longitude": "89.696986"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪৬",
+            "০১৭৬৯-৬৯১০৩৪"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "বঙ্গবন্ধু সেতু পশ্চিম (Bangabandhu Setu Pashchim)",
+        "location": {
+            "latitude": "24.397829",
+            "longitude": "89.737816"
+        },
+        "phoneNumbers": [
+            "01320129824",
+            "01320129825"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "সলংগা (Salanga)",
+        "location": {
+            "latitude": "24.4151039",
+            "longitude": "89.5057088"
+        },
+        "phoneNumbers": [
+            "০১৭১৩-৩৭৪০৪৮",
+            "০১৭৬৯-৬৯১০৪০"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    },
+    {
+        "name": "এনায়েতপুর (Enayetpur)",
+        "location": {
+            "latitude": "24.224156",
+            "longitude": "89.6942777"
+        },
+        "phoneNumbers": [
+            "০১৩২০-১২৯৮৭৬",
+            "01320-129877"
+        ],
+        "division": "রাজশাহী (Rajshahi)",
+        "district": "সিরাজগঞ্জ (Sirajganj)"
+    }
+]
