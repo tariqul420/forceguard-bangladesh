@@ -20,7 +20,7 @@ const Page = async ({ params, searchParams }: { params: dParams; searchParams?: 
   const data = await Army.find(query);
 
   return (
-    <div className="my-12">
+    <div className="my-12 px-2">
       <h1 className="text-2xl font-bold text-center">সেনা ক্যাম্প তথ্য || {divisionDec}</h1>
 
       <div className="mt-5 overflow-x-auto">

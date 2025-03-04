@@ -21,7 +21,7 @@ const Page = async ({ params, searchParams }: { params: dParams; searchParams?: 
   const data = await Police.find(query);
 
   return (
-    <div className="my-12">
+    <div className="my-12 px-2">
       <h1 className="text-2xl font-bold text-center">থানার তথ্য || {districtDec}</h1>
 
       <div className="mt-5 overflow-x-auto">
@@ -29,8 +29,8 @@ const Page = async ({ params, searchParams }: { params: dParams; searchParams?: 
           <thead>
             <tr className="bg-gray-200">
               <th className="px-4 py-2">নাম</th>
-              <th className="px-4 py-2">আওতাধীন এলাকা</th>
               <th className="px-4 py-2">বিভাগ</th>
+              <th className="px-4 py-2">জেলা</th>
               <th className="px-4 py-2">যোগাযোগ নম্বর</th>
             </tr>
           </thead>
@@ -38,10 +38,10 @@ const Page = async ({ params, searchParams }: { params: dParams; searchParams?: 
             {data.length > 0 ? (
               data.map((camp, index) => (
                 <tr key={index} className="hover:bg-gray-100">
-                  <td className="px-4 py-2">{camp.name}</td>
-                  <td className="px-4 py-2">{camp.description}</td>
+                  <td className="px-4 py-2">{camp?.name}</td>
                   <td className="px-4 py-2">{camp?.division ? camp?.division : 'অন্যান্য'}</td>
-                  <td className="px-4 py-2">{camp.phoneNumbers.length > 0 ? camp.phoneNumbers.join(', ') : 'N/A'}</td>
+                  <td className="px-4 py-2">{camp?.district}</td>
+                  <td className="px-4 py-2">{camp?.phoneNumbers?.length > 0 ? camp?.phoneNumbers?.join(', ') : 'N/A'}</td>
                 </tr>
               ))
             ) : (

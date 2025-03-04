@@ -15,7 +15,7 @@ const Page = async ({ searchParams }: { searchParams: srcParams }) => {
   const camps = await Police?.find(query);
 
   return (
-    <div className="my-12 px-4 md:px-8">
+    <div className="my-12 px-2 md:px-8">
       <h1 className="text-2xl md:text-3xl font-bold text-center">সেনা ক্যাম্প তথ্য</h1>
 
       <div className="mt-5 overflow-x-auto">

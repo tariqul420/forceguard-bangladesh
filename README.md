@@ -1,8 +1,8 @@
-# BD Army Camp
+# BD Army Camp And Police Station Location & Phone Number
 
 ## Introduction
 
-BD Army Camp is a web-based platform designed to manage and visualize army camp locations, track activities, and enhance operational efficiency using interactive maps.
+BD Army Camp and Police Station is a web-based platform designed to manage and visualize army camp locations, track activities, and enhance operational efficiency using interactive maps.
 
 ## Features
 
@@ -18,7 +18,7 @@ BD Army Camp is a web-based platform designed to manage and visualize army camp 
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB, Mongoose
 - **State Management**: React Query
-- **Maps & Geolocation**: Leaflet, React-Leaflet, MarkerCluster
+- **Maps & Geo Location**: Leaflet, React-Leaflet, MarkerCluster
 - **Deployment**: Vercel (Frontend), Vercel (Backend)
 
 ## Installation
@@ -35,8 +35,8 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/tariqul420/bd-army-camp.git
-   cd bd-army-camp
+   git clone https://github.com/tariqul420/bd-army-police.git
+   cd bd-army-police
    ```
 2. Install dependencies:
    ```sh
@@ -54,9 +54,10 @@ Ensure you have the following installed:
 
 ## API Endpoints
 
-| Method | Endpoint         | Description                    |
-| ------ | ---------------- | ------------------------------ |
-| GET    | `/api/armies`     | Get all army camps             |
+| Method | Endpoint       | Description            |
+| ------ | -------------- | ---------------------- |
+| GET    | `/api/armies`  | Get all army camps     |
+| GET    | `/api/polices` | Get all police station |
 
 ## Scripts
 
@@ -79,5 +80,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any queries, please contact [tariqul.developer@gmail.com].
+For any queries, please contact [Gmail](tariqul.developer@gmail.com).
 [Facebook](https://www.facebook.com/tariqul.islam.fb) || [Github](https://github.com/tariqul420) || [Linkedin](https://www.linkedin.com/in/tariqul-420-t) || [WhatsApp](https://api.whatsapp.com/send?phone=8801743892058)
