@@ -9,7 +9,9 @@ interface DistrictDocument {
   count: number;
 }
 
-const Page = async ({ params }: { params: { division: string } }) => {
+type dParams = Promise<{ division: string }>;
+
+const Page = async ({ params }: { params: dParams }) => {
   const { division } = (await params) || {};
   const divisionDec = decodeURIComponent(division);
 

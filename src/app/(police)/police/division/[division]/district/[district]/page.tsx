@@ -1,8 +1,9 @@
 import dbConnect from '@/lib/dbConnect';
 import Police from '@/models/Police';
 
-type dParams = { district: string };
-type srcParams = { name?: string };
+type dParams = Promise<{ district: string }>;
+
+type srcParams = Promise<{ name: string }>;
 
 const Page = async ({ params, searchParams }: { params: dParams; searchParams?: srcParams }) => {
   const { name } = (await searchParams) || {};
