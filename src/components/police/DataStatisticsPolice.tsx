@@ -37,7 +37,7 @@ const DataStatisticsPolice = async () => {
           <span className="font-semibold text-gray-800">বিভাগ অনুযায়ী:</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {divisionDetails?.map((division, index) => (
-              <Link href={`/army/division/${division?._id}`} key={index} className="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+              <Link href={`/police/division/${division?._id}`} key={index} className="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-green-700">{division?._id}</h3>
                 <p className="text-gray-600 mt-2">
                   থানার সংখ্যা: <span className="text-green-700">{division?.count}</span>
