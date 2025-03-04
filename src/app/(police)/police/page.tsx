@@ -1,5 +1,11 @@
+import MapComponentPolice from '@/components/police/MapComponentPolice';
+
 const page = () => {
-  return <div>This is police component</div>;
+  return (
+    <div>
+      <MapComponentPolice />
+    </div>
+  );
 };
 
 export default page;
