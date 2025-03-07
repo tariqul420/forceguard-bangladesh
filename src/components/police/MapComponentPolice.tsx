@@ -72,8 +72,8 @@ const MapComponentPolice = () => {
       }),
     };
 
-    layers['Google Streets'].addTo(map);
-    Leaflet.control.layers(layers).addTo(map);
+    layers['Google Streets']?.addTo(map);
+    Leaflet.control.layers(layers)?.addTo(map);
 
     const customIcon = Leaflet.icon({
       iconUrl: '/images/police1.png',

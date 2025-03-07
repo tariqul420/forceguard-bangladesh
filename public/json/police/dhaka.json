@@ -1,0 +1,1159 @@
+[
+    {
+        "name": "অষ্টগ্রাম (Austagram)",
+        "location": {
+            "latitude": "24.2730744",
+            "longitude": "91.1077055"
+        },
+        "phoneNumbers": [
+            "01320-095703",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "বাজিতপুর (Bajitpur)",
+        "location": {
+            "latitude": "24.2076758",
+            "longitude": "90.9403111"
+        },
+        "phoneNumbers": [
+            "01320-095547",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "ভৈরব (Bhairab)",
+        "location": {
+            "latitude": "24.0553863",
+            "longitude": "90.975815"
+        },
+        "phoneNumbers": [
+            "01320-095599",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "হোসেনপুর (Hossainpur)",
+        "location": {
+            "latitude": "24.4250756",
+            "longitude": "90.6502902"
+        },
+        "phoneNumbers": [
+            "01320-095469",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "ইটনা (Itna)",
+        "location": {
+            "latitude": "24.5286981",
+            "longitude": "91.0927655"
+        },
+        "phoneNumbers": [
+            "0130-095625",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "করিমগঞ্জ (Karimganj)",
+        "location": {
+            "latitude": "24.6710946",
+            "longitude": "90.981173"
+        },
+        "phoneNumbers": [
+            "01320-095417",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "কটিয়াদি (Katiadi)",
+        "location": {
+            "latitude": "24.2442942",
+            "longitude": "90.7957547"
+        },
+        "phoneNumbers": [
+            "01320-095521",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "কিশোরগঞ্জ সদর (Kishoreganj Sadar)",
+        "location": {
+            "latitude": "24.4382811",
+            "longitude": "90.7775199"
+        },
+        "phoneNumbers": [
+            "01320-095391",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "কুলিয়ারচর (Kuliarchar)",
+        "location": {
+            "latitude": "23.9007532",
+            "longitude": "88.8771443"
+        },
+        "phoneNumbers": [
+            "01320-095573",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "মিঠামইন (Mithamain)",
+        "location": {
+            "latitude": "24.4174693",
+            "longitude": "91.0513079"
+        },
+        "phoneNumbers": [
+            "01320-095651",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "নিকলী (Nikli)",
+        "location": {
+            "latitude": "24.3319452",
+            "longitude": "90.9305276"
+        },
+        "phoneNumbers": [
+            "0130-095677",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "পাকুন্দিয়া (Pakundia)",
+        "location": {
+            "latitude": "24.3282135",
+            "longitude": "90.6780455"
+        },
+        "phoneNumbers": [
+            "01320-095469",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "তাড়াইল (Tarail)",
+        "location": {
+            "latitude": "24.5497724",
+            "longitude": "90.8899201"
+        },
+        "phoneNumbers": [
+            "01320-095443",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "কিশোরগঞ্জ (Kishoreganj)"
+    },
+    {
+        "name": "গাজীপুর সদর (Gazipur Sadar)",
+        "location": {
+            "latitude": "24.0023277",
+            "longitude": "90.4169994"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গাজীপুর (Gazipur)"
+    },
+    {
+        "name": "কালিয়াকৈর (Kaliakair)",
+        "location": {
+            "latitude": "24.0689573",
+            "longitude": "90.2163483"
+        },
+        "phoneNumbers": [
+            "01713373365",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গাজীপুর (Gazipur)"
+    },
+    {
+        "name": "কালীগঞ্জ (Kaliganj)",
+        "location": {
+            "latitude": "23.921522",
+            "longitude": "90.5660655"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গাজীপুর (Gazipur)"
+    },
+    {
+        "name": "কাপাসিয়া (Kapasia)",
+        "location": {
+            "latitude": "24.1128146",
+            "longitude": "90.5660162"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গাজীপুর (Gazipur)"
+    },
+    {
+        "name": "শ্রীপুর (Sreepur)",
+        "location": {
+            "latitude": "24.2001038",
+            "longitude": "90.4759045"
+        },
+        "phoneNumbers": [
+            "01320092423",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গাজীপুর (Gazipur)"
+    },
+    {
+        "name": "গোপালগঞ্জ সদর (Gopalganj Sadar)",
+        "location": {
+            "latitude": "23.0127686",
+            "longitude": "89.830707"
+        },
+        "phoneNumbers": [
+            "01320-0499515",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গোপালগঞ্জ (Gopalganj)"
+    },
+    {
+        "name": "কাশিয়ানী (Kashiani)",
+        "location": {
+            "latitude": "23.2368334",
+            "longitude": "89.7145969"
+        },
+        "phoneNumbers": [
+            "01320-0499404",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গোপালগঞ্জ (Gopalganj)"
+    },
+    {
+        "name": "কোটালীপাড়া (Kotalipara)",
+        "location": {
+            "latitude": "22.9899835",
+            "longitude": "89.9879837"
+        },
+        "phoneNumbers": [
+            "01320-0499433",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গোপালগঞ্জ (Gopalganj)"
+    },
+    {
+        "name": "মুকসুদপুর (Muksudpur)",
+        "location": {
+            "latitude": "23.3193718",
+            "longitude": "89.8669642"
+        },
+        "phoneNumbers": [
+            "01320-0499370",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গোপালগঞ্জ (Gopalganj)"
+    },
+    {
+        "name": "টুঙ্গিপাড়া (Tungipara)",
+        "location": {
+            "latitude": "22.9107352",
+            "longitude": "89.8967208"
+        },
+        "phoneNumbers": [
+            "01320-0499457",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "গোপালগঞ্জ (Gopalganj)"
+    },
+    {
+        "name": "বাসাইল (Basail)",
+        "location": {
+            "latitude": "24.2300057",
+            "longitude": "90.0504175"
+        },
+        "phoneNumbers": [
+            "01320-096495",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "ভুয়াপুর (Bhuapur)",
+        "location": {
+            "latitude": "24.4626048",
+            "longitude": "89.8704815"
+        },
+        "phoneNumbers": [
+            "01320-096677",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "দেলদুয়ার (Delduar)",
+        "location": {
+            "latitude": "24.1636404",
+            "longitude": "89.9643079"
+        },
+        "phoneNumbers": [
+            "01320-096417",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "ঘাটাইল (Ghatail)",
+        "location": {
+            "latitude": "24.4836677",
+            "longitude": "89.9704267"
+        },
+        "phoneNumbers": [
+            "01320-096573",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "গোপালপুর (Gopalpur)",
+        "location": {
+            "latitude": "24.5620685",
+            "longitude": "89.9261856"
+        },
+        "phoneNumbers": [
+            "01320-096651",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "কালিহাতি (Kalihati)",
+        "location": {
+            "latitude": "24.3845281",
+            "longitude": "89.9872274"
+        },
+        "phoneNumbers": [
+            "01320-096547",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "মধুপুর (Madhupur)",
+        "location": {
+            "latitude": "24.605144",
+            "longitude": "90.0233547"
+        },
+        "phoneNumbers": [
+            "01320-096599",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "মির্জাপুর (Mirzapur)",
+        "location": {
+            "latitude": "24.1017955",
+            "longitude": "90.0959101"
+        },
+        "phoneNumbers": [
+            "01320-096469",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "নাগরপুর (Nagarpur)",
+        "location": {
+            "latitude": "24.0618265",
+            "longitude": "89.8771696"
+        },
+        "phoneNumbers": [
+            "01320-096443",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "সখিপুর (Sakhipur)",
+        "location": {
+            "latitude": "24.3183606",
+            "longitude": "90.1676279"
+        },
+        "phoneNumbers": [
+            "01320-096521",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "টাঙ্গাইল সদর (Tangail Sadar)",
+        "location": {
+            "latitude": "24.2465934",
+            "longitude": "89.9111508"
+        },
+        "phoneNumbers": [
+            "01320-096391",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "ধনবাড়ী (Dhanbari)",
+        "location": {
+            "latitude": "24.6692793",
+            "longitude": "89.9547961"
+        },
+        "phoneNumbers": [
+            "01320-096625",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "টাঙ্গাইল (Tangail)"
+    },
+    {
+        "name": "ধামরাই (Dhamrai)",
+        "location": {
+            "latitude": "23.9146723",
+            "longitude": "90.2138267"
+        },
+        "phoneNumbers": [
+            "01320089429",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ঢাকা (Dhaka)"
+    },
+    {
+        "name": "দোহার (Dohar)",
+        "location": {
+            "latitude": "23.6150155",
+            "longitude": "90.1169111"
+        },
+        "phoneNumbers": [
+            "01320089533",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ঢাকা (Dhaka)"
+    },
+    {
+        "name": "কেরানীগঞ্জ (Karanigonj)",
+        "location": {
+            "latitude": "23.6818954",
+            "longitude": "90.413425"
+        },
+        "phoneNumbers": [
+            "01320089481",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ঢাকা (Dhaka)"
+    },
+    {
+        "name": "নবাবগঞ্জ (Nababgonj)",
+        "location": {
+            "latitude": "23.6626871",
+            "longitude": "90.1577304"
+        },
+        "phoneNumbers": [
+            "01320089507",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ঢাকা (Dhaka)"
+    },
+    {
+        "name": "সাভার (Savar)",
+        "location": {
+            "latitude": "23.8402091",
+            "longitude": "90.2114331"
+        },
+        "phoneNumbers": [
+            "01320089377",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ঢাকা (Dhaka)"
+    },
+    {
+        "name": "বেলাবো (Belabo)",
+        "location": {
+            "latitude": "24.1089989",
+            "longitude": "90.8490496"
+        },
+        "phoneNumbers": [
+            "01320091517",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "মনোহরদী (Monohardi)",
+        "location": {
+            "latitude": "24.141242",
+            "longitude": "90.6939968"
+        },
+        "phoneNumbers": [
+            "01333378387",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "নরসিংদী সদর (Narsingdi Sadar)",
+        "location": {
+            "latitude": "23.9236326",
+            "longitude": "89.5569644"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "পলাশ (Polash)",
+        "location": {
+            "latitude": "23.9777945",
+            "longitude": "90.6521829"
+        },
+        "phoneNumbers": [
+            "01713373417",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "রায়পুরা (Raipura)",
+        "location": {
+            "latitude": "23.9828089",
+            "longitude": "90.8774936"
+        },
+        "phoneNumbers": [
+            "01320091479",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "শিবপুর (Shibpur)",
+        "location": {
+            "latitude": "24.0393678",
+            "longitude": "90.7364603"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নরসিংদী (Narsingdi)"
+    },
+    {
+        "name": "আড়াইহাজার (Arai Hazara)",
+        "location": {
+            "latitude": "23.7870939",
+            "longitude": "90.6552237"
+        },
+        "phoneNumbers": [
+            "01320090512",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নারায়নগঞ্জ (Narayanganj)"
+    },
+    {
+        "name": "সোনারগাঁও (Sonargaon)",
+        "location": {
+            "latitude": "23.6451105",
+            "longitude": "90.6083412"
+        },
+        "phoneNumbers": [
+            "01320090533",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নারায়নগঞ্জ (Narayanganj)"
+    },
+    {
+        "name": "বন্দর (Bandar)",
+        "location": {
+            "latitude": "23.6062939",
+            "longitude": "90.5082434"
+        },
+        "phoneNumbers": [
+            "01320090455",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নারায়নগঞ্জ (Narayanganj)"
+    },
+    {
+        "name": "নারায়ণগঞ্জ সদর (Narayanganj Sadar)",
+        "location": {
+            "latitude": "23.6152533",
+            "longitude": "90.5013636"
+        },
+        "phoneNumbers": [
+            "01320090382",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নারায়নগঞ্জ (Narayanganj)"
+    },
+    {
+        "name": "রূপগঞ্জ (Rupganj)",
+        "location": {
+            "latitude": "23.792454",
+            "longitude": "90.5182528"
+        },
+        "phoneNumbers": [
+            "01704000052",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "নারায়নগঞ্জ (Narayanganj)"
+    },
+    {
+        "name": "আলফাডাঙা (Alfadanga)",
+        "location": {
+            "latitude": "23.2934646",
+            "longitude": "89.7010027"
+        },
+        "phoneNumbers": [
+            "01715-334846",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "ভাঙ্গা (Vanga)",
+        "location": {
+            "latitude": "23.3885381",
+            "longitude": "89.9727297"
+        },
+        "phoneNumbers": [
+            "01320-097588",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "বোয়ালমারী (Boalmari)",
+        "location": {
+            "latitude": "23.3852718",
+            "longitude": "89.6793017"
+        },
+        "phoneNumbers": [
+            "01320-097432",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "চর ভদ্রাসন (Charvadrason)",
+        "location": {
+            "latitude": "23.5601443",
+            "longitude": "90.004549"
+        },
+        "phoneNumbers": [
+            "01716-696951",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "ফরিদপুর সদর (Faridpur Sadar)",
+        "location": {
+            "latitude": "23.6003588",
+            "longitude": "89.8319275"
+        },
+        "phoneNumbers": [
+            "01320-097380",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "মধুখালী (Modhukhali)",
+        "location": {
+            "latitude": "23.6004217",
+            "longitude": "89.8242026"
+        },
+        "phoneNumbers": [
+            "01320-097406",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "নগরকান্দা (Nagarkanda)",
+        "location": {
+            "latitude": "23.4182398",
+            "longitude": "89.8880983"
+        },
+        "phoneNumbers": [
+            "01712-792966",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "সদরপুর (Sadarpur)",
+        "location": {
+            "latitude": "23.4743722",
+            "longitude": "90.023005"
+        },
+        "phoneNumbers": [
+            "01320-097536",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "সালথা (Saltha)",
+        "location": {
+            "latitude": "23.4339662",
+            "longitude": "89.7845609"
+        },
+        "phoneNumbers": [
+            "01712-835451",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "ফরিদপুর (Faridpur)"
+    },
+    {
+        "name": "কালকিনী (Kalkini)",
+        "location": {
+            "latitude": "23.0721685",
+            "longitude": "90.2395132"
+        },
+        "phoneNumbers": [
+            "01320098422",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মাদারিপুর (Madaripur)"
+    },
+    {
+        "name": "মাদারিপুর সদর (Madaripur Sadar)",
+        "location": {
+            "latitude": "23.1862741",
+            "longitude": "90.0461689"
+        },
+        "phoneNumbers": [
+            "01320098370",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মাদারিপুর (Madaripur)"
+    },
+    {
+        "name": "রাজৈর (Rajoir)",
+        "location": {
+            "latitude": "23.206876",
+            "longitude": "90.0502481"
+        },
+        "phoneNumbers": [
+            "01320098396",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মাদারিপুর (Madaripur)"
+    },
+    {
+        "name": "শিবচর (Shibchar)",
+        "location": {
+            "latitude": "23.3457331",
+            "longitude": "90.1547903"
+        },
+        "phoneNumbers": [
+            "01320098448",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মাদারিপুর (Madaripur)"
+    },
+    {
+        "name": "ডাসা (Dasar)",
+        "location": {
+            "latitude": "23.2035541",
+            "longitude": "90.0099266"
+        },
+        "phoneNumbers": [
+            "01320098474",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মাদারিপুর (Madaripur)"
+    },
+    {
+        "name": "দৌলতপুর (Daulotpur)",
+        "location": {
+            "latitude": "22.8785969",
+            "longitude": "89.5154542"
+        },
+        "phoneNumbers": [
+            "01320-094531",
+            "01320-094532"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "ঘিওর (Ghior)",
+        "location": {
+            "latitude": "23.8998333",
+            "longitude": "89.8700068"
+        },
+        "phoneNumbers": [
+            "01320-094505",
+            "01320-094510"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "হরিরামপুর (Horirumpur)",
+        "location": {
+            "latitude": "23.7387349",
+            "longitude": "89.9652279"
+        },
+        "phoneNumbers": [
+            "01320-094453",
+            "01320-094458"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "মানিকগঞ্জ (Manikganj)",
+        "location": {
+            "latitude": "23.8616519",
+            "longitude": "89.9986724"
+        },
+        "phoneNumbers": [
+            "01320-094375",
+            "01320-094376"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "সাটুরিয়া (Saturia)",
+        "location": {
+            "latitude": "23.9731037",
+            "longitude": "90.0358037"
+        },
+        "phoneNumbers": [
+            "01320-094401",
+            "01320-094406"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "শিবালয় (Shibalaya)",
+        "location": {
+            "latitude": "23.8362677",
+            "longitude": "89.7797155"
+        },
+        "phoneNumbers": [
+            "01320-094479",
+            "01320-094480"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "সিঙ্গাইর (Singhair)",
+        "location": {
+            "latitude": "23.8160677",
+            "longitude": "90.1433024"
+        },
+        "phoneNumbers": [
+            "01320-094427",
+            "01320-094428"
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মানিকগঞ্জ (Manikganj)"
+    },
+    {
+        "name": "গজারিয়া (Gajaria)",
+        "location": {
+            "latitude": "23.6500",
+            "longitude": "90.6500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "লৌহজং (Louhajang)",
+        "location": {
+            "latitude": "23.6000",
+            "longitude": "90.5000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "মুন্সিগঞ্জ সদর (Munshiganj Sadar)",
+        "location": {
+            "latitude": "23.7000",
+            "longitude": "90.5500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "সিরাজদীখান (Sirajdikhan)",
+        "location": {
+            "latitude": "23.8000",
+            "longitude": "90.6000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "শ্রীনগর (Shreenagar)",
+        "location": {
+            "latitude": "23.7500",
+            "longitude": "90.5000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "টঙ্গীবাড়ী (Tongibari)",
+        "location": {
+            "latitude": "23.6000",
+            "longitude": "90.4500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "মুন্সিগঞ্জ (Munshiganj)"
+    },
+    {
+        "name": "বালিয়াকান্দি (Baliakandi)",
+        "location": {
+            "latitude": "23.6500",
+            "longitude": "89.5500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "রাজবাড়ী (Rajbari)"
+    },
+    {
+        "name": "গোয়ালন্দ (Goaland)",
+        "location": {
+            "latitude": "23.6000",
+            "longitude": "89.6000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "রাজবাড়ী (Rajbari)"
+    },
+    {
+        "name": "পাংশা (Pangsha)",
+        "location": {
+            "latitude": "23.7000",
+            "longitude": "89.5500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "রাজবাড়ী (Rajbari)"
+    },
+    {
+        "name": "রাজবাড়ী সদর (Rajbari Sadar)",
+        "location": {
+            "latitude": "23.7500",
+            "longitude": "89.6000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "রাজবাড়ী (Rajbari)"
+    },
+    {
+        "name": "কালুখালী (Kalukhali)",
+        "location": {
+            "latitude": "23.8000",
+            "longitude": "89.5000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "রাজবাড়ী (Rajbari)"
+    },
+    {
+        "name": "ভেদরগঞ্জ (Bhedorgonj)",
+        "location": {
+            "latitude": "23.7500",
+            "longitude": "90.7500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    },
+    {
+        "name": "ডামুড্যা (Damudya)",
+        "location": {
+            "latitude": "23.7000",
+            "longitude": "90.8000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    },
+    {
+        "name": "গোসাইরহাট (Gosairhat)",
+        "location": {
+            "latitude": "23.6000",
+            "longitude": "90.7500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    },
+    {
+        "name": "নড়িয়া (Naria)",
+        "location": {
+            "latitude": "23.7500",
+            "longitude": "90.6500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    },
+    {
+        "name": "শরিয়তপুর সদর (Shariatpur Sadar)",
+        "location": {
+            "latitude": "23.8000",
+            "longitude": "90.7000"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    },
+    {
+        "name": "জাজিরা (Jajira)",
+        "location": {
+            "latitude": "23.6500",
+            "longitude": "90.8500"
+        },
+        "phoneNumbers": [
+            "",
+            ""
+        ],
+        "division": "ঢাকা (Dhaka)",
+        "district": "শরীয়তপুর (Shariatpur)"
+    }
+]

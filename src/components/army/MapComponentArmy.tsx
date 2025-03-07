@@ -72,8 +72,8 @@ const MapComponentArmy = () => {
       }),
     };
 
-    layers["Google Streets"].addTo(map);
-    Leaflet.control.layers(layers).addTo(map);
+    layers["Google Streets"]?.addTo(map);
+    Leaflet.control.layers(layers)?.addTo(map);
 
     const customIcon = Leaflet.icon({
       iconUrl: '/images/bd_army.png',

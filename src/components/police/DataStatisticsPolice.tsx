@@ -9,7 +9,7 @@ interface DivisionDocument {
 
 const DataStatisticsPolice = async () => {
   await dbConnect();
-  const allCamps = await Police.estimatedDocumentCount();
+  const allStation = await Police.estimatedDocumentCount();
   const divisionDetails: DivisionDocument[] = await Police.aggregate([
     {
       $group: {
@@ -30,7 +30,7 @@ const DataStatisticsPolice = async () => {
       <div className="space-y-4">
         <div>
           <span className="stat-label font-semibold text-gray-800">মোট থানা: </span>
-          <span className="text-green-700 text-lg">{allCamps}</span>
+          <span className="text-green-700 text-lg">{allStation}</span>
         </div>
 
         <div className="stat-item">
