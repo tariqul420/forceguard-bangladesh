@@ -938,11 +938,11 @@
     {
         "name": "গজারিয়া (Gajaria)",
         "location": {
-            "latitude": "23.6500",
-            "longitude": "90.6500"
+            "latitude": "23.5656453",
+            "longitude": "90.5894709"
         },
         "phoneNumbers": [
-            "",
+            "01320093431",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -951,8 +951,8 @@
     {
         "name": "লৌহজং (Louhajang)",
         "location": {
-            "latitude": "23.6000",
-            "longitude": "90.5000"
+            "latitude": "23.4747414",
+            "longitude": "90.2773397"
         },
         "phoneNumbers": [
             "",
@@ -964,11 +964,11 @@
     {
         "name": "মুন্সিগঞ্জ সদর (Munshiganj Sadar)",
         "location": {
-            "latitude": "23.7000",
-            "longitude": "90.5500"
+            "latitude": "23.5533903",
+            "longitude": "90.5315709"
         },
         "phoneNumbers": [
-            "",
+            "01713373396",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -977,11 +977,11 @@
     {
         "name": "সিরাজদীখান (Sirajdikhan)",
         "location": {
-            "latitude": "23.8000",
-            "longitude": "90.6000"
+            "latitude": "23.5743175",
+            "longitude": "90.3784758"
         },
         "phoneNumbers": [
-            "",
+            "01320093509",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -990,11 +990,11 @@
     {
         "name": "শ্রীনগর (Shreenagar)",
         "location": {
-            "latitude": "23.7500",
-            "longitude": "90.5000"
+            "latitude": "23.5402981",
+            "longitude": "90.2835766"
         },
         "phoneNumbers": [
-            "",
+            "01320093483",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1003,11 +1003,11 @@
     {
         "name": "টঙ্গীবাড়ী (Tongibari)",
         "location": {
-            "latitude": "23.6000",
-            "longitude": "90.4500"
+            "latitude": "23.5110694",
+            "longitude": "90.4656767"
         },
         "phoneNumbers": [
-            "",
+            "01320093405",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1016,24 +1016,24 @@
     {
         "name": "বালিয়াকান্দি (Baliakandi)",
         "location": {
-            "latitude": "23.6500",
-            "longitude": "89.5500"
+            "latitude": "23.6361601",
+            "longitude": "89.5476401"
         },
         "phoneNumbers": [
-            "",
+            "01713373599",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "রাজবাড়ী (Rajbari)"
     },
     {
-        "name": "গোয়ালন্দ (Goaland)",
+        "name": "গোয়ালন্দ (Goalondaghat)",
         "location": {
-            "latitude": "23.6000",
-            "longitude": "89.6000"
+            "latitude": "23.725431",
+            "longitude": "89.7616348"
         },
         "phoneNumbers": [
-            "",
+            "01320-101447",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1042,11 +1042,11 @@
     {
         "name": "পাংশা (Pangsha)",
         "location": {
-            "latitude": "23.7000",
-            "longitude": "89.5500"
+            "latitude": "23.794507",
+            "longitude": "89.4109923"
         },
         "phoneNumbers": [
-            "",
+            "01320-101395",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1055,11 +1055,11 @@
     {
         "name": "রাজবাড়ী সদর (Rajbari Sadar)",
         "location": {
-            "latitude": "23.7500",
-            "longitude": "89.6000"
+            "latitude": "23.7563854",
+            "longitude": "89.6410202"
         },
         "phoneNumbers": [
-            "",
+            "01320-101369",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1068,11 +1068,11 @@
     {
         "name": "কালুখালী (Kalukhali)",
         "location": {
-            "latitude": "23.8000",
-            "longitude": "89.5000"
+            "latitude": "23.7649029",
+            "longitude": "89.4859268"
         },
         "phoneNumbers": [
-            "",
+            "01320-101473",
             ""
         ],
         "division": "ঢাকা (Dhaka)",
@@ -1081,12 +1081,12 @@
     {
         "name": "ভেদরগঞ্জ (Bhedorgonj)",
         "location": {
-            "latitude": "23.7500",
-            "longitude": "90.7500"
+            "latitude": "23.1963115",
+            "longitude": "90.4470546"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "0132100452",
+            "01320100457"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
@@ -1094,25 +1094,25 @@
     {
         "name": "ডামুড্যা (Damudya)",
         "location": {
-            "latitude": "23.7000",
-            "longitude": "90.8000"
+            "latitude": "23.1347759",
+            "longitude": "90.4387021"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "01320100478",
+            "01320100483"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
     },
     {
-        "name": "গোসাইরহাট (Gosairhat)",
+        "name": "গোসাইরহাট (Goshirhat)",
         "location": {
-            "latitude": "23.6000",
-            "longitude": "90.7500"
+            "latitude": "23.0702709",
+            "longitude": "90.4327021"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "01320100504",
+            "01320100509"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
@@ -1120,12 +1120,12 @@
     {
         "name": "নড়িয়া (Naria)",
         "location": {
-            "latitude": "23.7500",
-            "longitude": "90.6500"
+            "latitude": "23.3024311",
+            "longitude": "90.4034088"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "01320100400",
+            "01320100405"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
@@ -1133,25 +1133,25 @@
     {
         "name": "শরিয়তপুর সদর (Shariatpur Sadar)",
         "location": {
-            "latitude": "23.8000",
-            "longitude": "90.7000"
+            "latitude": "23.2059295",
+            "longitude": "90.3122297"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "01320100530",
+            "01320100535"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
     },
     {
-        "name": "জাজিরা (Jajira)",
+        "name": "জাজিরা (Zajira)",
         "location": {
-            "latitude": "23.6500",
-            "longitude": "90.8500"
+            "latitude": "23.3315828",
+            "longitude": "90.3221294"
         },
         "phoneNumbers": [
-            "",
-            ""
+            "01320100426",
+            "01320100431"
         ],
         "division": "ঢাকা (Dhaka)",
         "district": "শরীয়তপুর (Shariatpur)"
