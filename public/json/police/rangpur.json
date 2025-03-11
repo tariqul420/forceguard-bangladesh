@@ -1,0 +1,594 @@
+[
+  {
+    "name": " পীরগঞ্জ (Pirganj)",
+    "location": {
+      "latitude": "25.8586636",
+      "longitude": "88.3571362"
+    },
+    "phoneNumbers": ["01320-131511"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " বদরগঞ্জ (Badarganj)",
+    "location": {
+      "latitude": "25.6755823",
+      "longitude": "89.0529925"
+    },
+    "phoneNumbers": ["01320-131433"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " মিঠাপুকুর (Mithapukur)",
+    "location": {
+      "latitude": "25.5740376",
+      "longitude": "89.2708479"
+    },
+    "phoneNumbers": ["01320-131485"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " পীরগাছা (Pirgacha)",
+    "location": {
+      "latitude": "25.6590617",
+      "longitude": "89.4069391"
+    },
+
+    "phoneNumbers": ["01320-131537"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " তারাগঞ্জ (Taraganj)",
+    "location": {
+      "latitude": "25.8175315",
+      "longitude": "89.0090106"
+    },
+    "phoneNumbers": ["01320-131459"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " গঙ্গাচড়া (Gangachara)",
+    "location": {
+      "latitude": "25.8529178",
+      "longitude": "89.2160285"
+    },
+    "phoneNumbers": ["01320-131407"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " কাউনিয়া (Kaunia)",
+    "location": {
+      "latitude": "25.7722779",
+      "longitude": "89.4125009"
+    },
+    "phoneNumbers": ["01320-131563"],
+    "division": "রংপুর (Rangpur)",
+    "district": "রংপুর (Rangpur)"
+  },
+
+  {
+    "name": " বিরল (Birol)",
+    "location": {
+      "latitude": "25.6326882",
+      "longitude": "88.5465531"
+    },
+    "phoneNumbers": ["01320136443", "01320136448"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " বোচাগঞ্জ (Bochaganj)",
+    "location": {
+      "latitude": "25.8036861",
+      "longitude": "88.4551538"
+    },
+    "phoneNumbers": ["01320136521", "01320136526"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " কাহারোল (Kaharol)",
+    "location": {
+      "latitude": "25.7874324",
+      "longitude": "88.599549"
+    },
+    "phoneNumbers": ["01320136547", "01320136552"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " খানসামা (Khansama)",
+    "location": {
+      "latitude": "25.9279647",
+      "longitude": "88.7248795"
+    },
+    "phoneNumbers": ["01320136573", "01320136578"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+  {
+    "name": " চিরিরবন্দর (Chirirbandar)",
+    "location": {
+      "latitude": "25.6439975",
+      "longitude": "88.7740132"
+    },
+    "phoneNumbers": ["01320136417", "01320136422"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+  {
+    "name": " পার্বতীপুর (Parbatipur)",
+    "location": {
+      "latitude": "25.6642177",
+      "longitude": "88.9035371"
+    },
+    "phoneNumbers": ["01320136469", "01320136474"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+  {
+    "name": " ফুলবাড়ী (Fulbari)",
+    "location": {
+      "latitude": "25.4984572",
+      "longitude": "88.9600257"
+    },
+    "phoneNumbers": ["01320136601", "01320136604"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " বিরামপুর (Birampur)",
+    "location": {
+      "latitude": "25.3857425",
+      "longitude": "88.9916398"
+    },
+    "phoneNumbers": ["01320136625", "01320136630"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " নবাবগঞ্জ (Nobabganj)",
+    "location": {
+      "latitude": "23.6626871",
+      "longitude": "90.1577304"
+    },
+    "phoneNumbers": ["01320136651", "01320136656"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " হাকিমপুর (Hakimpur)",
+    "location": {
+      "latitude": "25.2850379",
+      "longitude": "89.0145349"
+    },
+    "phoneNumbers": ["01320136708"],
+    "division": "রংপুর (Rangpur)",
+    "district": "দিনাজপুর (Dinajpur)"
+  },
+
+  {
+    "name": " গাইবান্ধা সদর (Gaibandha Sadar)",
+    "location": {
+      "latitude": "25.3277546",
+      "longitude": "89.5381826"
+    },
+    "phoneNumbers": ["01320132376"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+  {
+    "name": " সুন্দরগঞ্জ (Sundarganj)",
+    "location": {
+      "latitude": "25.5693544",
+      "longitude": "89.5185703"
+    },
+    "phoneNumbers": ["01320132428"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+  {
+    "name": " গোবিন্দগঞ্জ (Gobindagonj)",
+    "location": {
+      "latitude": "25.1359015",
+      "longitude": "89.3765519"
+    },
+    "phoneNumbers": ["01320132480"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+
+  {
+    "name": " সাদুল্লাপুর (Sadullahpur)",
+    "location": {
+      "latitude": "25.3913506",
+      "longitude": "89.4634184"
+    },
+    "phoneNumbers": ["01713373893"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+
+  {
+    "name": " সাঘাটা (Shaghata)",
+    "location": {
+      "latitude": "25.1101002",
+      "longitude": "89.5814812"
+    },
+    "phoneNumbers": ["01320132506"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+
+  {
+    "name": " ফুলছড়ি (Fulchori )",
+    "location": {
+      "latitude": "25.2731349",
+      "longitude": "89.5741559"
+    },
+    "phoneNumbers": ["01794791098"],
+    "division": "রংপুর (Rangpur)",
+    "district": "গাইবান্ধা (Gaibandha)"
+  },
+
+  {
+    "name": " কুড়িগ্রাম সদর (Kurigram Sadar)",
+    "location": {
+      "latitude": "25.8063037",
+      "longitude": "89.6342196"
+    },
+    "phoneNumbers": ["01320-133386"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " উলিপুর (Ulipur)",
+    "location": {
+      "latitude": "25.6545445",
+      "longitude": "89.6152694"
+    },
+    "phoneNumbers": ["01320-133516", "01320-133517"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " ফুলবাড়ী (Fulbari)",
+    "location": {
+      "latitude": "25.4984572",
+      "longitude": "88.9600257"
+    },
+    "phoneNumbers": ["01320-133438", "01320-133439"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " ভূরুঙ্গামারী (Bhurungamari)",
+    "location": {
+      "latitude": "26.109329",
+      "longitude": "89.668715"
+    },
+    "phoneNumbers": ["01320133490", "01320133491"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " রাজারহাট (Rajarhat )",
+    "location": {
+      "latitude": "22.631653",
+      "longitude": "88.4822587"
+    },
+    "phoneNumbers": ["01320133412", "01320133413"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " চিলমারী (Chilmari)",
+    "location": {
+      "latitude": "",
+      "longitude": ""
+    },
+    "phoneNumbers": ["01320133542", "01320133543"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " রৌমারী (Rawmari)",
+    "location": {
+      "latitude": "25.5773176",
+      "longitude": "89.8302623"
+    },
+    "phoneNumbers": ["01320-133568", "01320-133569"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " রাজিবপুর (Razibpur)",
+    "location": {
+      "latitude": "25.4419055",
+      "longitude": "89.7909631"
+    },
+    "phoneNumbers": ["01320133594", "01320133595"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " কচলী (Kachakata)",
+    "location": {
+      "latitude": "26.0030868",
+      "longitude": "89.7836512"
+    },
+    "phoneNumbers": ["01320133646"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " ঢুষমারা  (Dhushmara)",
+    "location": {
+      "latitude": "25.5175149",
+      "longitude": "89.7656923"
+    },
+    "phoneNumbers": ["01320133620"],
+    "division": "রংপুর (Rangpur)",
+    "district": "কুড়িগ্রাম  (Kurigram)"
+  },
+
+  {
+    "name": " নীলফামারী (Nilphamari)",
+    "location": {
+      "latitude": "25.931311",
+      "longitude": "88.8544302"
+    },
+    "phoneNumbers": ["01713373909"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+
+  {
+    "name": " সৈয়দপুর (Saidpur)",
+    "location": {
+      "latitude": "25.7847056",
+      "longitude": "88.8924515"
+    },
+    "phoneNumbers": ["01713373910"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+
+  {
+    "name": " কিশোরগঞ্জ (Kishoreganj)",
+    "location": {
+      "latitude": "24.4382811",
+      "longitude": "90.7775199"
+    },
+    "phoneNumbers": ["01713373912"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+  {
+    "name": " ডোমার (Domar)",
+    "location": {
+      "latitude": "26.1077924",
+      "longitude": "88.8153206"
+    },
+    "phoneNumbers": ["01713373913"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+  {
+    "name": " ডিমলা (Dimla)",
+    "location": {
+      "latitude": "26.1539026",
+      "longitude": "88.9189042"
+    },
+    "phoneNumbers": ["01713373914"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+  {
+    "name": " জলঢাকা (Jaldhaka)",
+    "location": {
+      "latitude": "26.0222387",
+      "longitude": "89.0139368"
+    },
+    "phoneNumbers": ["01713373911"],
+    "division": "রংপুর (Rangpur)",
+    "district": "নীলফামারী  (Nilphamari)"
+  },
+
+  {
+    "name": "  লালমনিরহাট সদর (Lalmonirhat Sadar)",
+    "location": {
+      "latitude": "25.9174395",
+      "longitude": "89.4458792"
+    },
+    "phoneNumbers": ["01320134371"],
+    "division": "রংপুর (Rangpur)",
+    "district": "লালমনিরহাট  (Lalmonirhat)"
+  },
+
+  {
+    "name": "  আদিতমারী (ADITMARI)",
+    "location": {
+      "latitude": "25.9240504",
+      "longitude": "89.3431109"
+    },
+    "phoneNumbers": ["01320134397"],
+    "division": "রংপুর (Rangpur)",
+    "district": "লালমনিরহাট (Lalmonirhat)"
+  },
+
+  {
+    "name": "হাতীবান্ধা (HATIBANDHA)",
+    "location": {
+      "latitude": "26.1241315",
+      "longitude": "89.138493"
+    },
+    "phoneNumbers": ["01320134449"],
+    "division": "রংপুর (Rangpur)",
+    "district": "লালমনিরহাট (Lalmonirhat)"
+  },
+  {
+    "name": " পাটগ্রাম (PATGRAM)",
+    "location": {
+      "latitude": "26.34933",
+      "longitude": "89.0190625"
+    },
+    "phoneNumbers": ["1320134475"],
+    "division": "রংপুর (Rangpur)",
+    "district": "লালমনিরহাট (Lalmonirhat)"
+  },
+  {
+    "name": " কালীগঞ্জ (Kaliganj)",
+    "location": {
+      "latitude": "23.921522",
+      "longitude": "90.5660655"
+    },
+    "phoneNumbers": ["1320134423"],
+    "division": "রংপুর (Rangpur)",
+    "district": "লালমনিরহাট (Lalmonirhat)"
+  },
+
+  {
+    "name": "  ঠাকুরগাঁও সদর (Thakurgaon  Sadar )",
+    "location": {
+      "latitude": "26.0348544",
+      "longitude": "88.4585757"
+    },
+    "phoneNumbers": ["01320137376"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": "  পীরগঞ্জ(Pirganj)",
+    "location": {
+      "latitude": "25.8586636",
+      "longitude": "88.3571362"
+    },
+    "phoneNumbers": ["01320137454"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": " রানীশংকৈল (Ranishankoil)",
+    "location": {
+      "latitude": "25.9015064",
+      "longitude": "88.2501394"
+    },
+    "phoneNumbers": ["01320137428"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": " হরিপুর (Haripur)",
+    "location": {
+      "latitude": "25.8275394",
+      "longitude": "88.1258578"
+    },
+    "phoneNumbers": ["01320137480"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": " ভূল্লী  (Bhulli)",
+    "location": {
+      "latitude": "26.1238259",
+      "longitude": "88.5234469"
+    },
+    "phoneNumbers": ["01320137599"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": " রুহিয়া  (Ruhea)",
+    "location": {
+      "latitude": "26.1737903",
+      "longitude": "88.3991948"
+    },
+    "phoneNumbers": ["01320137506"],
+    "division": "রংপুর (Rangpur)",
+    "district": "ঠাকুরগাঁও  (Thakurgaon)"
+  },
+
+  {
+    "name": " দেবীগঞ্জ  (Debiganj)",
+    "location": {
+      "latitude": "26.1187353",
+      "longitude": "88.753492"
+    },
+    "phoneNumbers": ["01713374003"],
+    "division": "রংপুর (Rangpur)",
+    "district": "পঞ্চগড় (panchagarh)"
+  },
+
+  {
+    "name": "  পঞ্চগড় সদর (Panchagarh Sadar)",
+    "location": {
+      "latitude": "26.3324959",
+      "longitude": "88.5516952"
+    },
+    "phoneNumbers": ["01713373999"],
+    "division": "রংপুর (Rangpur)",
+    "district": "পঞ্চগড় (panchagarh)"
+  },
+  {
+    "name": "  তেতুলিয়া (Tetulia)",
+    "location": {
+      "latitude": "26.4984985",
+      "longitude": "88.3355533"
+    },
+    "phoneNumbers": [""],
+    "division": "রংপুর (Rangpur)",
+    "district": "পঞ্চগড় (panchagarh)"
+  },
+  {
+    "name": "  বোদা  (Boda)",
+    "location": {
+      "latitude": "26.1948315",
+      "longitude": "88.5542937"
+    },
+    "phoneNumbers": ["01713374000"],
+    "division": "রংপুর (Rangpur)",
+    "district": "পঞ্চগড় (panchagarh)"
+  },
+  {
+    "name": "  আটোয়ারী (Atwari)",
+    "location": {
+      "latitude": "26.2315867",
+      "longitude": "88.4069858"
+    },
+    "phoneNumbers": [""],
+    "division": "রংপুর (Rangpur)",
+    "district": "পঞ্চগড় (panchagarh)"
+  }
+]
