@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <main>
-      <Title title="বাংলাদেশে সেনাবাহিনীর ক্যাম্প ও থানার লোকেশন" desc="সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর" />
+      <Title title="বাংলাদেশে সেনাবাহিনীর ক্যাম্প ও  থানার লোকেশন" desc="সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর" />
       <div className="min-h-[calc(100vh-163px)]">{children}</div>
       <FooterSection />
     </main>
