@@ -11,13 +11,13 @@ const hindSiliguri = Hind_Siliguri({
 });
 
 export const metadata: Metadata = {
-  title: 'বাংলাদেশে সেনাবাহিনী ক্যাম্প ও থানা',
-  description: 'বাংলাদেশ সেনা ক্যাম্প ও থানার ওয়েবসাইট। এখানে আপনি সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর সম্পর্কিত সকল তথ্য পাবেন।',
+  title: 'ফোর্সগার্ড-বাংলাদেশ',
+  description: 'ফোর্সগার্ড-বাংলাদেশ: সেনাবাহিনী ও পুলিশের ক্যাম্প এবং থানার তথ্য, যোগাযোগ নম্বরসহ সহজে খুঁজে পাওয়ার প্ল্যাটফর্ম।',
   openGraph: {
-    title: 'বাংলাদেশে সেনাবাহিনী ক্যাম্প ও থানা',
-    description: 'বাংলাদেশ সেনা ক্যাম্প ও থানার ওয়েবসাইট। এখানে আপনি সেনাবাহিনীর ক্যাম্পসমূহ ও থানার লোকেশন এবং যোগাযোগের নম্বর সম্পর্কিত সকল তথ্য পাবেন।',
-    url: 'https://bd-army-police.vercel.app',
-    siteName: 'বাংলাদেশে সেনাবাহিনী ক্যাম্প ও থানা',
+    title: 'ফোর্সগার্ড-বাংলাদেশ',
+    description: 'ফোর্সগার্ড-বাংলাদেশ: সেনাবাহিনী ও পুলিশের ক্যাম্প এবং থানার তথ্য, যোগাযোগ নম্বরসহ সহজে খুঁজে পাওয়ার প্ল্যাটফর্ম।',
+    url: 'https://forceguard-bd.vercel.app',
+    siteName: 'ফোর্সগার্ড-বাংলাদেশ',
     images: [
       {
         url: '/images/bd_flag.jpg',
@@ -39,10 +39,10 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="bn" className={hindSiliguri.variable}>
       <body className="antialiased bg-[#f5f5f5] text-[#333] max-w-[1200px] mx-auto">
-          <DataProvider>
-            {children}
-            <Toaster position="top-right" reverseOrder={false} />
-          </DataProvider>
+        <DataProvider>
+          {children}
+          <Toaster position="top-right" reverseOrder={false} />
+        </DataProvider>
       </body>
     </html>
   );

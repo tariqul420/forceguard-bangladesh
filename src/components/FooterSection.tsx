@@ -1,5 +1,3 @@
-import React from 'react';
-
 const FooterSection = () => {
   return (
     <footer className="text-center pt-5 border-t border-gray-300 text-gray-600 text-sm">
@@ -9,7 +7,7 @@ const FooterSection = () => {
           Tariqul Islam
         </a>{' '}
         |{' '}
-        <a className="text-blue-500 transition-colors duration-300 hover:text-blue-700" href="https://www.linkedin.com/in/tariqul-420-t/" target="_blank" rel="noopener noreferrer">
+        <a className="text-blue-500 transition-colors duration-300 hover:text-blue-700" href="https://www.linkedin.com/in/tariqul-dev" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>{' '}
         |{' '}
