@@ -65,7 +65,7 @@ const HeroBtn = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-        <button onClick={handleLocation} className="w-full px-4 py-3 bg-dark text-light rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
+        <button onClick={handleLocation} className="w-full px-4 py-3 bg-dark  rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
           {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') || pathname?.startsWith('/police/all-police-station') || pathname?.startsWith('/police/division') ? (
             <FaMapMarkedAlt />
           ) : (

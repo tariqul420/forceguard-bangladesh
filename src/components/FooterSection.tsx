@@ -3,15 +3,15 @@ const FooterSection = () => {
     <footer className="text-center text-medium pt-5 text-sm">
       <p>
         Made with ❤️ by{' '}
-        <a className="text-light" href="https://www.facebook.com/tariqul.islam.fb/" target="_blank" rel="noopener noreferrer">
+        <a className="" href="https://www.facebook.com/tariqul.islam.fb/" target="_blank" rel="noopener noreferrer">
           Tariqul Islam
         </a>{' '}
         |{' '}
-        <a className="text-light" href="https://www.linkedin.com/in/tariqul-dev" target="_blank" rel="noopener noreferrer">
+        <a className="" href="https://www.linkedin.com/in/tariqul-dev" target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>{' '}
         |{' '}
-        <a className="text-light" href="https://github.com/tariqul420" target="_blank" rel="noopener noreferrer">
+        <a className="" href="https://github.com/tariqul420" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
       </p>

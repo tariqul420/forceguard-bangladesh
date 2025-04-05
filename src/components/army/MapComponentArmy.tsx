@@ -139,7 +139,7 @@ const MapComponentArmy = () => {
     };
   }, [camps, mapLocation]);
 
-  return <div id="map" className="w-full h-[600px] border-2 border-main-500 rounded-xl"></div>;
+  return <div id="map" className="w-full h-[600px] border-2 border-dark rounded-xl"></div>;
 };
 
 export default MapComponentArmy;
