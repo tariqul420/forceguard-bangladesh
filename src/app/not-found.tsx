@@ -18,8 +18,7 @@ const NotFound = () => {
         {/* Back to Home Button */}
         <Link
           href={'/'}
-          className="mt-6 px-6 py-3 bg-green text-white font-semibold rounded-lg shadow-md hover:bg-green-600 transition-all focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:bg-green-600 dark:hover:bg-green-700"
-        >
+          className="mt-6 px-6 py-3 bg-main text-white font-semibold rounded-lg shadow-md hover:bg-main-600 transition-all focus:outline-none focus:ring-2 focus:ring-main-500 focus:ring-offset-2 dark:bg-main-600 dark:hover:bg-main-700">
           Back to Home
         </Link>
       </div>

@@ -25,22 +25,22 @@ const DataStatisticsArmy = async () => {
   ]);
 
   return (
-    <div className="mt-6 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-green-700 mb-4">তথ্য পরিসংখ্যান</h2>
+    <div className="mt-6 p-6 bg-dark rounded-lg shadow-md">
+      <h2 className="text-2xl text-light font-bold text-main-700 mb-4">তথ্য পরিসংখ্যান</h2>
       <div className="space-y-4">
         <div>
-          <span className="stat-label font-semibold text-gray-800">মোট ক্যাম্প: </span>
-          <span className="text-green-700 text-lg">{allCamps}</span>
+          <span className="stat-label text-medium font-semibold">মোট ক্যাম্প: </span>
+          <span className="text-main-700 text-lg">{allCamps}</span>
         </div>
 
         <div className="stat-item">
-          <span className="font-semibold text-gray-800">বিভাগ অনুযায়ী:</span>
+          <span className="font-semibold text-medium">বিভাগ অনুযায়ী:</span>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {divisionDetails?.map((division, index) => (
-              <Link href={`/army/division/${division?._id}`} key={index} className="p-4 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-green-700">{division?._id}</h3>
-                <p className="text-gray-600 mt-2">
-                  ক্যাম্প সংখ্যা: <span className="text-green-700">{division?.count}</span>
+              <Link href={`/army/division/${division?._id}`} key={index} className="p-4 bg-dark-input rounded-lg shadow-sm">
+                <h3 className="text-lg font-semibold text-light">{division?._id}</h3>
+                <p className="text-medium mt-2">
+                  ক্যাম্প সংখ্যা: <span className="text-main-700">{division?.count}</span>
                 </p>
               </Link>
             ))}
@@ -53,7 +53,7 @@ const DataStatisticsArmy = async () => {
 
       {/* Data page button */}
       <div className="mt-6 flex justify-center">
-        <Link href={'/army/all-camp'} className="data-page-btn inline-block px-6 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-all duration-300">
+        <Link href={'/army/all-camp'} className="data-page-btn inline-block px-6 py-2 bg-dark-input text-light rounded-md">
           সকল ডাটা দেখুন এক পেইজে
         </Link>
       </div>

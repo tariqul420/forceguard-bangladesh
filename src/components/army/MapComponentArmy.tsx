@@ -6,8 +6,8 @@ import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 interface Camp {
   name: string;
@@ -17,7 +17,7 @@ interface Camp {
   };
   description?: string;
   phoneNumbers?: string[];
-  division: string
+  division: string;
 }
 
 const MapComponentArmy = () => {
@@ -72,7 +72,7 @@ const MapComponentArmy = () => {
       }),
     };
 
-    layers["Google Streets"]?.addTo(map);
+    layers['Google Streets']?.addTo(map);
     Leaflet.control.layers(layers)?.addTo(map);
 
     const customIcon = Leaflet.icon({
@@ -91,7 +91,7 @@ const MapComponentArmy = () => {
       if (!isNaN(lat) && !isNaN(lng)) {
         const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(`
           <div class="p-4">
-            <h3 class="text-lg font-bold text-green-700">${camp?.name}</h3>
+            <h3 class="text-lg font-bold text-main-700">${camp?.name}</h3>
             <h4 class="text-base font-medium text-black">বিভাগ: ${camp?.division}</h4>
             ${camp?.description ? `<p class="text-sm text-gray-600 mt-2">${camp?.description}</p>` : ''}
             ${
@@ -139,7 +139,7 @@ const MapComponentArmy = () => {
     };
   }, [camps, mapLocation]);
 
-  return <div id="map" className="w-full h-[600px] border-2 border-green-500 rounded-xl"></div>;
+  return <div id="map" className="w-full h-[600px] border-2 border-main-500 rounded-xl"></div>;
 };
 
 export default MapComponentArmy;

@@ -6,8 +6,8 @@ import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 import 'leaflet/dist/leaflet.css';
-import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 interface Camp {
   name: string;
@@ -91,7 +91,7 @@ const MapComponentPolice = () => {
       if (!isNaN(lat) && !isNaN(lng)) {
         const marker = Leaflet.marker([lat, lng], { icon: customIcon }).bindPopup(`
           <div class="p-4">
-            <h3 class="text-lg font-bold text-green">${camp?.name}</h3>
+            <h3 class="text-lg font-bold text-main">${camp?.name}</h3>
             <h4 class="text-base font-medium text-black">বিভাগ: ${camp?.division}</h4>
             <h4 class="text-base font-medium text-black">জেলা: ${camp?.district}</h4>
             ${
@@ -139,7 +139,7 @@ const MapComponentPolice = () => {
     };
   }, [camps, mapLocation]);
 
-  return <div id="map" className="w-full h-[600px] border-2 border-green-500 rounded-xl"></div>;
+  return <div id="map" className="w-full h-[600px] border-2 border-main-500 rounded-xl"></div>;
 };
 
 export default MapComponentPolice;

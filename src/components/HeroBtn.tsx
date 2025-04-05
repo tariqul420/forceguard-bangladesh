@@ -54,9 +54,9 @@ const HeroBtn = () => {
   return (
     <div className="w-full flex flex-col gap-4 p-4 md:p-6 lg:p-8">
       <div className="relative w-full flex items-center">
-        <FaSearch className="absolute text-gray-500 left-4" />
+        <FaSearch className="absolute text-medium left-4" />
         <input
-          className="w-full py-3 px-4 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm md:text-base"
+          className="w-full py-3 px-4 pl-10 border border-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-main-500 text-sm md:text-base text-medium"
           type="text"
           placeholder="ক্যাম্প খুঁজুন..."
           value={searchValue}
@@ -65,7 +65,7 @@ const HeroBtn = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-        <button onClick={handleLocation} className="w-full  px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
+        <button onClick={handleLocation} className="w-full px-4 py-3 bg-dark text-light rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
           {pathname === '/army/all-camp' || pathname?.startsWith('/army/division') || pathname?.startsWith('/police/all-police-station') || pathname?.startsWith('/police/division') ? (
             <FaMapMarkedAlt />
           ) : (
@@ -76,7 +76,7 @@ const HeroBtn = () => {
             : 'আপনার লোকেশন খুঁজুন'}
         </button>
 
-        <Link href="/" className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-700 flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
+        <Link href="/" className="w-full px-4 py-3 bg-dark text-medium rounded-lg flex items-center justify-center gap-2 cursor-pointer text-sm md:text-base">
           <FiHome />
           হোমে যান
         </Link>
