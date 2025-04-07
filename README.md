@@ -85,5 +85,10 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any queries, please contact [Gmail](tariqul.developer@gmail.com).
-[Facebook](https://www.facebook.com/tariqul.islam.fb) || [Github](https://github.com/tariqul420) || [Linkedin](https://www.linkedin.com/in/tariqul-420-t) || [WhatsApp](https://api.whatsapp.com/send?phone=8801743892058)
+For any queries, please contact:
+
+[![Gmail](https://img.shields.io/badge/Gmail-tariqul.developer@gmail.com-red?style=flat-square&logo=gmail&color=333333)](mailto:tariqul.developer@gmail.com)
+[![Facebook](https://img.shields.io/badge/Facebook-Tariqul_Islam-blue?style=flat-square&logo=facebook&color=333333)](https://www.facebook.com/tariqul.islam.fb)
+[![GitHub](https://img.shields.io/badge/GitHub-tariqul420-black?style=flat-square&logo=github&color=333333)](https://github.com/tariqul420)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Tariqul_Islam-blue?style=flat-square&logo=linkedin&color=333333)](https://www.linkedin.com/in/tariqul-dev)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-+8801743892058-green?style=flat-square&logo=whatsapp&color=333333)](https://api.whatsapp.com/send?phone=8801743892058)
